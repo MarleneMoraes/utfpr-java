@@ -1,8 +1,12 @@
-package br.edu.utfpr.javai.aula06.heranca.abordagempratica;
+package br.edu.utfpr.javai.aula06.heranca.abstracao;
 
 public class Pessoa {
     private String cpf;
     private String nome; 
+
+    public void impLocal() {
+        System.out.println("\n\nEstou na classe Pessoa \n\n");
+    };
 
     public String getCpf() {
         return cpf;
