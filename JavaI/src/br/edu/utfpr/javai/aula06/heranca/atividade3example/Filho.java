@@ -1,3 +1,5 @@
+package br.edu.utfpr.javai.aula06.heranca.atividade3example;
+
 public class Filho {
     private int rgFilho;
     private String nomeFilho;
@@ -6,7 +8,7 @@ public class Filho {
         this.rgFilho = 0;
         this.nomeFilho = "";
     }
-    
+
     public Filho(int rgFilho, String nomeFilho) {
         this.rgFilho = rgFilho;
         this.nomeFilho = nomeFilho;

@@ -1,18 +1,14 @@
+package br.edu.utfpr.javai.aula06.heranca.atividade3example;
+
 public abstract class Genitores {
     private int rgGens;
     private String nomeGens;
     private Filho filhoGens;
 
-    public Genitores() { 
+    public Genitores() {
         this.rgGens = 0;
         this.nomeGens = "";
         this.filhoGens = new Filho();
-    }
-
-    public Genitores(int rgGens, String nomeGens, Filho filhoGens) {
-        this.rgGens = rgGens;
-        this.nomeGens = nomeGens;
-        this.filhoGens = filhoGens; 
     }
 
     public int getRgGens() {
@@ -39,7 +35,5 @@ public abstract class Genitores {
         this.filhoGens = filhoGens;
     }
 
-    /*public abstract int calcRg() {
-        return 0;
-    }*/
+    public abstract int calcRg();
 }
