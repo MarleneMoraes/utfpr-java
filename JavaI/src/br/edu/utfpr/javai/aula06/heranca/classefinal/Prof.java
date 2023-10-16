@@ -10,7 +10,7 @@ public class Prof extends Pessoa {
     };
 
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 

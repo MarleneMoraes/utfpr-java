@@ -4,7 +4,7 @@ public class Prof extends Pessoa {
     private double salario;
     private String titulo; 
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 

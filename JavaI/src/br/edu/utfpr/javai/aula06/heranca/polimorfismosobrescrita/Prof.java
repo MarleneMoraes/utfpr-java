@@ -2,7 +2,8 @@ package br.edu.utfpr.javai.aula06.heranca.polimorfismosobrescrita;
 
 public class Prof extends Pessoa {
     private final double salario = 1000;
-    private String titulo; 
+    private String titulo;
+    public String getSalario; 
 
     public void impLocal() {
         System.out.println("\n\nEstou na classe Professor \n\n");
@@ -10,7 +11,7 @@ public class Prof extends Pessoa {
     };
 
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 
