@@ -16,7 +16,7 @@ public class Aluno extends Pessoa {
         return curso;
     }
 
-    public void setCurso(String Curso) {
+    public void setCurso(String curso) {
         this.curso = curso;
     }
 }
