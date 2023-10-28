@@ -17,5 +17,5 @@
 
 ## Disciplinas
 - Linguagem De Programação Java I (`javai`)
-- Tecnologia De Orientação A Objetos E Ferramentas UML (`oo&uml`)
+- Tecnologia De Orientação A Objetos E Ferramentas UML (`ooeuml`)
 - Integração Contínua (`devops`)
