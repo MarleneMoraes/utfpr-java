@@ -1,5 +1,7 @@
 package br.edu.utfpr.javai.atividadevi.java.entities;
 
+import br.edu.utfpr.javai.atividadeiv.java.entities.Calcular;
+
 public final class Carga extends Veiculo implements Calcular {
     private int cargaMax;
     private int tara;
@@ -56,7 +58,7 @@ public final class Carga extends Veiculo implements Calcular {
     @Override
     public String toString() {
         return "Marca := " + getMarca() + "\nModelo := " + getModelo() + "\nPlaca := " + getPlaca()
-                + "\nVelocidade Máxima := " + getVelocMax() + "\nTara: " + tara + "\nCarga Máxima := " + cargaMax
-                + motor.toString();
+        + "\nVelocidade Máxima := " + calcVel(getVelocMax()) + "\nTara: " + tara 
+        + "\nCarga Máxima := " + cargaMax + motor.toString() + "\nSomatório Numéricos := " + calcular();
     }
 }
