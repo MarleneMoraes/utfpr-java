@@ -28,6 +28,6 @@ public final class Passeio extends Veiculo {
     @Override
     public String toString() {
         return "Marca := " + getMarca() + "\nModelo := " + getModelo() + "\nPlaca : " + getPlaca() + "\nVelocidade Maxima := "
-                + getVelocMax() +"\nQtd Passageiros := " + qtdPassageiros + motor.toString();
+                + calcVel(getVelocMax()) +"\nQtd Passageiros := " + qtdPassageiros + motor.toString();
     }
 }

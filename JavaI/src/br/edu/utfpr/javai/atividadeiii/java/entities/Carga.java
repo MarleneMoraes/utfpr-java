@@ -40,7 +40,7 @@ public final class Carga extends Veiculo {
     @Override
     public String toString() {
         return "Marca := " + getMarca() + "\nModelo := " + getModelo() + "\nPlaca := " + getPlaca()
-                + "\nVelocidade Máxima := " + getVelocMax() + "\nTara: " + tara + "\nCarga Máxima := " + cargaMax
+                + "\nVelocidade Máxima := " + calcVel(getVelocMax()) + "\nTara: " + tara + "\nCarga Máxima := " + cargaMax
                 + motor.toString();
     }
 }
