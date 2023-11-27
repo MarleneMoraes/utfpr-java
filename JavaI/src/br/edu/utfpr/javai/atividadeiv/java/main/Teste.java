@@ -122,6 +122,7 @@ public class Teste {
 					}
 				} else {
 					System.out.println("Este veículo já está cadastrado.");
+					return veiculosPasseio;
 				}
 
 				input = scan.entDados("Deseja adicionar mais veículos de passeio? (SIM/NAO)");
@@ -172,6 +173,7 @@ public class Teste {
 					}
 				} else {
 					System.out.println("Este veículo já está cadastrado.");
+					return veiculosCarga;
 				}
 
 				input = scan.entDados("Deseja adicionar mais veículos de carga? (SIM/NAO)");

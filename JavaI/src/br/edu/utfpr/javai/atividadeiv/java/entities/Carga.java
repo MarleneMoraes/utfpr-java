@@ -32,7 +32,7 @@ public final class Carga extends Veiculo implements Calcular {
         this.tara = tara;
     }
 
-    // Calculo da Velocidade para Veiculos de Carga 
+    // Calculo da Velocidade para Veiculos de Carga
     @Override
     public float calcVel(float velocMax) {
         return velocMax * 100000;
@@ -41,22 +41,22 @@ public final class Carga extends Veiculo implements Calcular {
     // Retorna a soma de todos os valores dos atributos numericos
     @Override
     public int calcular() {
-    	int valoresNumericos = 0;
-    	
-    	valoresNumericos += getVelocMax();
-    	valoresNumericos += getQtdRodas();
-    	valoresNumericos += getMotor().getQtdPist();
-    	valoresNumericos += getMotor().getPotencia();
-    	valoresNumericos += getCargaMax();
-    	valoresNumericos += getTara();
-    	
-    	return valoresNumericos;
+        int valoresNumericos = 0;
+
+        valoresNumericos += getVelocMax();
+        valoresNumericos += getQtdRodas();
+        valoresNumericos += getMotor().getQtdPist();
+        valoresNumericos += getMotor().getPotencia();
+        valoresNumericos += getCargaMax();
+        valoresNumericos += getTara();
+
+        return valoresNumericos;
     }
 
     @Override
     public String toString() {
         return "Marca := " + getMarca() + "\nModelo := " + getModelo() + "\nPlaca := " + getPlaca()
-                + "\nVelocidade Máxima := " + getVelocMax() + "\nTara: " + tara + "\nCarga Máxima := " + cargaMax
-                + motor.toString();
+                + "\nVelocidade Máxima := " + calcVel(getVelocMax()) + "\nTara: " + tara 
+                + "\nCarga Máxima := " + cargaMax + motor.toString() + "\nSomatório Numéricos := " + calcular();
     }
 }
