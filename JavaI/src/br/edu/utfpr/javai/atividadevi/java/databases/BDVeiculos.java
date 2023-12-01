@@ -1,7 +1,7 @@
 package br.edu.utfpr.javai.atividadevi.java.databases;
 
-import br.edu.utfpr.javai.atividadeiv.java.entities.Carga;
-import br.edu.utfpr.javai.atividadeiv.java.entities.Passeio;
+import br.edu.utfpr.javai.atividadevi.java.entities.Carga;
+import br.edu.utfpr.javai.atividadevi.java.entities.Passeio;
 
 public final class BDVeiculos {
 	private Passeio[] listaPasseio;

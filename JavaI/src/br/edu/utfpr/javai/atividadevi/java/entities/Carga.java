@@ -1,6 +1,6 @@
 package br.edu.utfpr.javai.atividadevi.java.entities;
 
-import br.edu.utfpr.javai.atividadeiv.java.entities.Calcular;
+import br.edu.utfpr.javai.atividadevi.java.interfaces.Calcular;
 
 public final class Carga extends Veiculo implements Calcular {
     private int cargaMax;

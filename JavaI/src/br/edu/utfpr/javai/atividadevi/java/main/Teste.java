@@ -2,9 +2,9 @@ package br.edu.utfpr.javai.atividadevi.java.main;
 
 import java.io.IOException;
 
-import br.edu.utfpr.javai.atividadeiv.java.entities.Carga;
-import br.edu.utfpr.javai.atividadeiv.java.entities.Passeio;
-import br.edu.utfpr.javai.atividadeiv.java.utils.Leitura;
+import br.edu.utfpr.javai.atividadevi.java.entities.Carga;
+import br.edu.utfpr.javai.atividadevi.java.entities.Passeio;
+import br.edu.utfpr.javai.atividadevi.java.utils.Leitura;
 import br.edu.utfpr.javai.atividadevi.java.databases.BDVeiculos;
 import br.edu.utfpr.javai.atividadevi.java.exception.VeicExistException;
 import br.edu.utfpr.javai.atividadevi.java.exception.VelocException;

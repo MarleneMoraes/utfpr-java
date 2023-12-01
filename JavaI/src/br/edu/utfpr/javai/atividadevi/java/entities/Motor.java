@@ -1,6 +1,5 @@
 package br.edu.utfpr.javai.atividadevi.java.entities;
 
-
 public class Motor {
 	// Attributes
 	private int qtdPist;
