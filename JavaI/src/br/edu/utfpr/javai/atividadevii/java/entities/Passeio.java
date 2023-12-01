@@ -1,6 +1,6 @@
 package br.edu.utfpr.javai.atividadevii.java.entities;
 
-import br.edu.utfpr.javai.atividadevi.java.interfaces.Calcular;
+import br.edu.utfpr.javai.atividadevii.java.interfaces.Calcular;
 
 public final class Passeio extends Veiculo implements Calcular {
     private int qtdPassageiros;
