@@ -1,14 +1,14 @@
-package br.edu.utfpr.javai.atividadevi.java.main;
+package br.edu.utfpr.javai.atividadevii.java.main;
 
 import java.io.IOException;
 import java.util.List;
 
-import br.edu.utfpr.javai.atividadeiv.java.entities.Carga;
-import br.edu.utfpr.javai.atividadeiv.java.entities.Passeio;
-import br.edu.utfpr.javai.atividadeiv.java.utils.Leitura;
-import br.edu.utfpr.javai.atividadevi.java.databases.BDVeiculos;
-import br.edu.utfpr.javai.atividadevi.java.exception.VeicExistException;
-import br.edu.utfpr.javai.atividadevi.java.exception.VelocException;
+import br.edu.utfpr.javai.atividadevii.java.entities.Carga;
+import br.edu.utfpr.javai.atividadevii.java.entities.Passeio;
+import br.edu.utfpr.javai.atividadevii.java.utils.Leitura;
+import br.edu.utfpr.javai.atividadevii.java.databases.BDVeiculos;
+import br.edu.utfpr.javai.atividadevii.java.exception.VeicExistException;
+import br.edu.utfpr.javai.atividadevii.java.exception.VelocException;
 
 /**
  * @author Marlene Moraes
@@ -312,7 +312,7 @@ public class Teste {
 
 	private static Carga buscaVeiculosCarga(List<Carga> veiculosCarga, String input) {
 		for (Carga veiculo : veiculosCarga) {
-			if (veiculosCarga.isEmpty) {
+			if (veiculosCarga.isEmpty()) {
 				break;
 			} else if (veiculo.getPlaca().equals(input)) {
 				veiculo.setPlaca(input);

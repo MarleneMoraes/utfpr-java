@@ -1,7 +1,7 @@
-package br.edu.utfpr.javai.atividadevi.java.databases;
+package br.edu.utfpr.javai.atividadevii.java.databases;
 
-import br.edu.utfpr.javai.atividadeiv.java.entities.Carga;
-import br.edu.utfpr.javai.atividadeiv.java.entities.Passeio;
+import br.edu.utfpr.javai.atividadevii.java.entities.Carga;
+import br.edu.utfpr.javai.atividadevii.java.entities.Passeio;
 
 import java.util.List;
 import java.util.ArrayList;

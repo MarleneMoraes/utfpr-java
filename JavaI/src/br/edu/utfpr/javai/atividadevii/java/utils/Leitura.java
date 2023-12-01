@@ -1,4 +1,4 @@
-package br.edu.utfpr.javai.atividadevi.java.utils;
+package br.edu.utfpr.javai.atividadevii.java.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

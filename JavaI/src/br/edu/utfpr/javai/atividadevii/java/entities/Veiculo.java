@@ -1,4 +1,4 @@
-package br.edu.utfpr.javai.atividadevi.java.entities;
+package br.edu.utfpr.javai.atividadevii.java.entities;
 
 public abstract class Veiculo {
 	// Attributes

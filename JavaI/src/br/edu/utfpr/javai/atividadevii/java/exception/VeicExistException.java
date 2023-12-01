@@ -1,4 +1,4 @@
-package br.edu.utfpr.javai.atividadevi.java.exception;
+package br.edu.utfpr.javai.atividadevii.java.exception;
 
 public class VeicExistException extends Exception {
 	private static final long serialVersionUID = 1L;
