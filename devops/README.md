@@ -3,7 +3,7 @@
 ## Corpo Docente
 Professor: Prof. Dr. Djeizon A. Barros
 
-Tutor: Me. Edilson Fernandes da Costa
+Tutor: Dr. Gabriel Costa Silva
 
 [Contrato Pedagógico](https://github.com/MarleneMoraes/utfpr-java/blob/main/oo-e-uml/DEVOPS_Contrato_Pedagogico.md)
 
