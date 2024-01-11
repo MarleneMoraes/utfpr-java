@@ -18,9 +18,9 @@
 ## Disciplinas
 ### 1º Trimestre
 - Integração Contínua (`devops`)
-- Linguagem De Programação Java I (`javai`)
-- Tecnologia De Orientação A Objetos E Ferramentas UML (`ooeuml`)
+- Linguagem De Programação Java I (`java-i`)
+- Tecnologia De Orientação A Objetos E Ferramentas UML (`oo-e-uml`)
 ### 2º Trimestre
 - Java Aplicado A Redes De Computadores (`redes`)
-- Linguagem De Programação Java II (`javaii`)
+- Linguagem De Programação Java II (`java-ii`)
 - Sistemas de Banco de Dados (`banco`)
