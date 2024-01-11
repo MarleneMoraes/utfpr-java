@@ -5,7 +5,7 @@ Professor: Prof. Dr. Djeizon A. Barros
 
 Tutor: Dr. Gabriel Costa Silva
 
-[Contrato Pedagógico](https://github.com/MarleneMoraes/utfpr-java/blob/main/oo-e-uml/DEVOPS_Contrato_Pedagogico.md)
+[Contrato Pedagógico](https://github.com/MarleneMoraes/utfpr-java/blob/main/devops/DEVOPS_Contrato_Pedagogico.md)
 
 ## Conteúdo
 ### 01 | Introdução: DevOps, CI, CD, IaS
