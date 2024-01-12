@@ -7,3 +7,28 @@ Tutor: Adriano dos Santos Dias
 
 [Contrato Pedagógico](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/BANCO_Contrato_Pedagogico.pdf)
 
+## Conteúdo
+### 01 | Revisão SQL
+#### Conteúdo
+
+[Apostila - Revisão de SQL e Banco de Dados](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/01-revisao-sql/apostila-revisao-sql-banco-de-dados.pdf)
+
+#### Material Complementar
+- [Slides SQL - Parte 01](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/01-revisao-sql/slide-sql-com-exemplos-resolvidos.pdf)
+
+-[Slides SQL - Parte 02](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/01-revisao-sql/slide-sql-material-complementar.pdf)
+
+- [Tutorial de MySQL](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/01-revisao-sql/tutorial-my-sql.pdf)
+
+- [Fundamentos de Banco de Dados](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/01-revisao-sql/slide-fundamentos-bd.pdf)
+
+- [Creating & Using Views](https://mariadb.com/kb/en/creating-using-views/)
+
+- [MariaDB: VIEW](https://www.techonthenet.com/mariadb/views.php)
+
+- [Index de artigos do SBBD (Simpósio Brasileiro de Banco de Dados)](http://www.informatik.uni-trier.de/~ley/db/conf/sbbd/)
+
+- [W3Schools - Tutorial SQL](http://www.w3schools.com/SQL)
+
+**Pasta:** `01-revisao-sql`
+**Pasta:** `01-revisao-sql`
