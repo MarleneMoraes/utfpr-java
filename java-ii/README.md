@@ -29,3 +29,19 @@ Tutor: Rodrigo Henrique Cunha Palácios
 
 **Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 13-14.
 
+### 02 | IO API
+
+1. [Videoaula - Java I/O (parte 1)](https://www.youtube.com/watch?v=0Kpb2f6ExQ8&ab_channel=ArthurGreg%C3%B3rio)
+2. [Videoaula - Java I/O (parte 2)](https://www.youtube.com/watch?v=JDYkCpK2zk8&ab_channel=ArthurGreg%C3%B3rio)
+
+#### Documentação Oficial
+- [Lesson: Basic I/O](https://docs.oracle.com/javase/tutorial/essential/io/)
+
+#### Conteúdo Complementar
+- [Java IO Tutorial - Java I/O](http://www.java2s.com/Tutorials/Java/Java_io/index.htm)
+- [Java IO Tutorials](https://www.baeldung.com/java-io)
+- [Java IO Tutorial](https://jenkov.com/tutorials/java-io/index.html)
+- [Java New Input/Output](https://howtodoinjava.com/java/nio/)
+- [Modern file input/output with Java: Going fast with NIO and NIO.2](https://blogs.oracle.com/javamagazine/post/java-nio-nio2-buffers-channels-async-future-callback)
+
+**Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 10.
