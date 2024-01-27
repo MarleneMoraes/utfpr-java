@@ -23,3 +23,7 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 
 #### Conteúdo Complementar
 - [Multithreaded Servers in Java](https://www.geeksforgeeks.org/multithreaded-servers-in-java/)
+
+### 03 | Transmissão de Objetos
+#### Conteúdo Complementar
+- [Estudo Sugerido - Variável serialVersionUID](https://blog.algaworks.com/serialversionuid/)
