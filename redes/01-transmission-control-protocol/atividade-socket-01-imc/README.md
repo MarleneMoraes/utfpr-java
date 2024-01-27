@@ -1,0 +1,3 @@
+## Enunciado:
+
+Crie um programa em que o cliente receba a altura e peso de um usuário. Em seguida, o cliente deve enviar esses dois valores ao servidor. Ao receber os dois valores, o servidor deve realizar o cálculo do IMC (Índice de Massa Corporal) cuja fórmula é `IMC=peso/(altura*altura)`. Assim que o IMC for calculado pelo servidor, este deve enviar o resultado ao cliente que irá mostrar o valor do IMC do usuário.

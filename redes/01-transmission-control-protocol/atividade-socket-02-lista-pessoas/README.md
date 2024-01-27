@@ -1,0 +1,2 @@
+## Enunciado:
+Desenvolva uma aplicação que no lado cliente popule uma lista de pessoas cujos dados são: nome, cpf, endereco, telefone, email e idade. Após popular essa lista de pessoas no cliente, deve-se enviar todos os objetos dessa lista de pessoas ao servidor. O servidor ao receber cada objeto (pessoa) deverá exibir em sua tela apenas as pessoas cuja idade seja superior a 18 anos.
