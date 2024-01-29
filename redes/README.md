@@ -12,6 +12,7 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 
 - Slides: `aula01_slide-socket-tcp.pdf`
 - Leitura: `aula01-socket`
+- Atividades: `atividade-socket-01-imc`, `atividade-socket-02-lista-pessoas`
 
 #### Conteúdo Complementar
 - [Vídeo introdutório de Redes de Computadores](https://www.youtube.com/watch?v=oz8gvGIUKFw)
@@ -19,5 +20,10 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 - [Aula sobre Threads](https://www.youtube.com/watch?v=Tbwu55Iov5s&t=1252s)
 
 ### 02 | TCP e Múltiplos Acessos
+
 #### Conteúdo Complementar
 - [Multithreaded Servers in Java](https://www.geeksforgeeks.org/multithreaded-servers-in-java/)
+
+### 03 | Transmissão de Objetos
+#### Conteúdo Complementar
+- [Estudo Sugerido - Variável serialVersionUID](https://blog.algaworks.com/serialversionuid/)
