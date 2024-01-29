@@ -38,5 +38,15 @@ Tutor: Adriano dos Santos Dias
 - Introdução ao Spring Data JPA
 - Configuração do Spring Data JPA
 
-**Pasta:** `02-jpa`
+**Pasta:** `02-jpa-intro`
+
+### 03 | JPA (Entidade)
+#### Conteúdo
+
+- Lidando com Entidades
+- [Apostila - Como criar projeto Spring](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_como-criar-projeto-spring.pdf)
+- [Apostila - Implementar configuração programática](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_implementar-configuracao-programatica.pdf)
+- [Apostila - Implementando Classes Entidades](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_implementando_classes_entidades.pdf)
+
+**Pasta:** `03-jpa-entidade`
 
