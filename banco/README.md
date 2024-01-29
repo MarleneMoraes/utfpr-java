@@ -31,4 +31,12 @@ Tutor: Adriano dos Santos Dias
 - [W3Schools - Tutorial SQL](http://www.w3schools.com/SQL)
 
 **Pasta:** `01-revisao-sql`
-**Pasta:** `01-revisao-sql`
+
+### 02 | JPA (Introdução e Configuração)
+#### Conteúdo
+
+- Introdução ao Spring Data JPA
+- Configuração do Spring Data JPA
+
+**Pasta:** `02-jpa`
+
