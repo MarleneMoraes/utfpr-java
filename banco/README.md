@@ -51,3 +51,10 @@ Tutor: Adriano dos Santos Dias
 
 **Pasta:** `03-jpa-entidade`
 
+### 04 | JPA (Repositórios: Parte 1)
+#### Conteúdo
+
+- Repositórios (Parte 1)
+- [Apostila - Implementando Repository e Service](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/04-jpa-repositorios/apostila_implementando-repository-e-service.pdf)
+
+**Pasta:** `04-jpa-repositorios`
