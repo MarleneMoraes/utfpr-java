@@ -31,6 +31,7 @@ Tutor: Adriano dos Santos Dias
 - [W3Schools - Tutorial SQL](http://www.w3schools.com/SQL)
 
 **Pasta:** `01-revisao-sql`
+**Atividade:** `atividade-01`
 
 ### 02 | JPA (Introdução e Configuração)
 #### Conteúdo
