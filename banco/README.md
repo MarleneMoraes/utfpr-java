@@ -31,4 +31,30 @@ Tutor: Adriano dos Santos Dias
 - [W3Schools - Tutorial SQL](http://www.w3schools.com/SQL)
 
 **Pasta:** `01-revisao-sql`
-**Pasta:** `01-revisao-sql`
+**Atividade:** `atividade-01`
+
+### 02 | JPA (Introdução e Configuração)
+#### Conteúdo
+
+- Introdução ao Spring Data JPA
+- Configuração do Spring Data JPA
+
+**Pasta:** `02-jpa-intro`
+
+### 03 | JPA (Entidade)
+#### Conteúdo
+
+- Lidando com Entidades
+- [Apostila - Como criar projeto Spring](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_como-criar-projeto-spring.pdf)
+- [Apostila - Implementar configuração programática](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_implementar-configuracao-programatica.pdf)
+- [Apostila - Implementando Classes Entidades](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/03-jpa-entidade/apostila_implementando_classes_entidades.pdf)
+
+**Pasta:** `03-jpa-entidade`
+
+### 04 | JPA (Repositórios: Parte 1)
+#### Conteúdo
+
+- Repositórios (Parte 1)
+- [Apostila - Implementando Repository e Service](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/04-jpa-repositorios/apostila_implementando-repository-e-service.pdf)
+
+**Pasta:** `04-jpa-repositorios`
