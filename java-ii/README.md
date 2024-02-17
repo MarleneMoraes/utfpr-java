@@ -45,3 +45,21 @@ Tutor: Rodrigo Henrique Cunha Palácios
 - [Modern file input/output with Java: Going fast with NIO and NIO.2](https://blogs.oracle.com/javamagazine/post/java-nio-nio2-buffers-channels-async-future-callback)
 
 **Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 10.
+
+### 03 | Threads
+
+1. [Videoaula - Threads (parte 1)](https://youtu.be/z7LD4an8jgk)
+2. [Videoaula - Threads (parte 2)](https://youtu.be/0gGGONK6QXo)
+3. [Videoaula - Threads (parte 3)](https://youtu.be/O6VkyGc1CBw)
+   
+#### Documentação Oficial
+- [Java Tutorial - Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+  
+#### Conteúdo Complementar
+- [What Is a Race Condition?](https://www.baeldung.com/cs/race-conditions)
+- [4Comprehension - How to stop a thread without calling .stop()](https://4comprehension.com/how-to-stop-a-java-thread-without-using-thread-stop/)
+- [JavaSpecialists - Synchronizing on value-based classes](https://www.javaspecialists.eu/archive/Issue299-Synchronizing-on-Value-Based-Classes.html)
+
+**Pasta:** `03-threads`
+
+**Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 11.
