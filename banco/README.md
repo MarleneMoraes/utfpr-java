@@ -40,6 +40,7 @@ Tutor: Adriano dos Santos Dias
 - Configuração do Spring Data JPA
 
 **Pasta:** `02-jpa-intro`
+**Atividade:** `atividade-02`
 
 ### 03 | JPA (Entidade)
 #### Conteúdo
@@ -58,3 +59,13 @@ Tutor: Adriano dos Santos Dias
 - [Apostila - Implementando Repository e Service](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/04-jpa-repositorios/apostila_implementando-repository-e-service.pdf)
 
 **Pasta:** `04-jpa-repositorios`
+**Atividade:** `atividade-03`
+
+### 05 | JPA (Repositórios: Parte 2)
+#### Conteúdo
+
+- Repositórios (Parte 2)
+- [Apostila - Tutorial CommandLineRunner e Logger](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/05-jpa-repositorios02/apostila_tutorial-CommandLineRunner-e-Logger.pdf)
+
+**Pasta:** `05-jpa-repositorios02`
+**Atividade:** `atividade-04`
