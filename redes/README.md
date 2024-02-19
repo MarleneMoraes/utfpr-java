@@ -27,3 +27,14 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 ### 03 | Transmissão de Objetos
 #### Conteúdo Complementar
 - [Estudo Sugerido - Variável serialVersionUID](https://blog.algaworks.com/serialversionuid/)
+
+- Atividade: `Atividade03` 
+
+### 04 | Múltiplos acessos com Objetos
+- Atividade: `Atividade04` 
+
+### 05 | User Datagram Protocol (Parte 1)
+- Leitura: `aula02-socket-udp`, `datagram-multicast`
+
+#### Conteúdo Complementar
+- [A Guide to UDP In Java](https://www.baeldung.com/udp-in-java)
