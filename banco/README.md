@@ -69,3 +69,20 @@ Tutor: Adriano dos Santos Dias
 
 **Pasta:** `05-jpa-repositorios02`
 **Atividade:** `atividade-04`
+
+### 06 | JPA (Repositórios: Parte 3)
+#### Conteúdo
+
+- Repositórios (Parte 3)
+- [Apostila - Criando stored procedures no MariaDB](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/06-jpa-repositorios03/apostila_criando-StoredProcedures-no-MariaDB.pdf)
+- [Apostila - Implementando chamada a Stored Procedure](https://github.com/MarleneMoraes/utfpr-java/blob/main/banco/06-jpa-repositorios03/apostila_implementando-chamada-a-StoredProcedure.pdf)
+  
+#### Material Complementar
+- [Stored Procedures no MySQL](https://www.devmedia.com.br/stored-procedures-no-mysql/29030)
+
+**Pasta:** `06-jpa-repositorios03`
+
+
+
+
+
