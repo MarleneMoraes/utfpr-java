@@ -34,6 +34,7 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 - Atividade: `Atividade04` 
 
 ### 05 | User Datagram Protocol (Parte 1)
+- [Estudo Sugerido - A Guide to UDP In Java](https://www.baeldung.com/udp-in-java)
 - Leitura: `aula02-socket-udp`, `datagram-multicast`
 
 #### Conteúdo Complementar
