@@ -10,7 +10,8 @@
 # IDE files
 */.vscode
 */.idea
-*/.metadata
+*/.metadata/*
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
