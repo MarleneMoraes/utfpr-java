@@ -5,6 +5,7 @@
   <br>
   <em>Curso de Especialização em Tecnologia Java
     <br> na Universidade Tecnológica Federal do Paraná (UTFPR) </em>
+  <small>Matrícula Acelerada</small>
   <br>
 </p>
 
@@ -24,3 +25,7 @@
 - Java Aplicado A Redes De Computadores (`redes`)
 - Linguagem De Programação Java II (`java-ii`)
 - Sistemas de Banco de Dados (`banco`)
+### 3º Trimestre
+- Java Web (`web`)
+- Frameworks Web (`frameworks`)
+- Enterprise Java Beans (`ejb`)
