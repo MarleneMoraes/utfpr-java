@@ -1,0 +1,7 @@
+package chatUDP;
+
+public class BatePapo extends Thread {
+	public static void main(String[] args) {
+
+	}
+}
