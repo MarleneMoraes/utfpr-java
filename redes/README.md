@@ -37,4 +37,7 @@ Adjunto: Prof. Esp. Djeizon A. Barros
 - Leitura: `aula02-socket-udp`, `datagram-multicast`
 
 #### Conteúdo Complementar
-- [A Guide to UDP In Java](https://www.baeldung.com/udp-in-java)
+- [Estudo Sugerido - A Guide to UDP In Java](https://www.baeldung.com/udp-in-java)
+
+### 06 | User Datagram Protocol (Parte 2)
+- [Estudo Sugerido - Chat UDP em Java](https://www.codejava.net/java-se/networking/java-udp-client-server-program-example)
