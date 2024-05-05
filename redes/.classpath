@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="01-transmission-control-protocol/atividade-socket-01-imc/src"/>
+	<classpathentry kind="src" path="01-transmission-control-protocol/atividade-socket-02-lista-pessoas/src"/>
+	<classpathentry kind="src" path="01-transmission-control-protocol/atividade01/src"/>
+	<classpathentry kind="src" path="01-transmission-control-protocol/sockets-java/src"/>
+	<classpathentry kind="src" path="02-tcp-e-multiplos-acessos/Aula02/src"/>
+	<classpathentry kind="src" path="03-transmissao-de-objetos/Aula03/src"/>
+	<classpathentry kind="output" path="01-transmission-control-protocol/atividade-socket-01-imc/bin"/>
+</classpath>
