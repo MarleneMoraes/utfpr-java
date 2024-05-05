@@ -5,13 +5,13 @@
   <br>
   <em>Curso de Especialização em Tecnologia Java
     <br> na Universidade Tecnológica Federal do Paraná (UTFPR) </em>
-  <small>Matrícula Acelerada</small>
-  <br>
+  <br/><small>Matrícula Acelerada</small>
+  <br/>
 </p>
 
 <p align="center">
   <a href="http://pos-graduacao-ead.cp.utfpr.edu.br/java/"><strong>Site Oficial</strong></a>
-  <br>
+  <br/>
 </p>
 
 <hr>
