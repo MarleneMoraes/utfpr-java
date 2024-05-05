@@ -1,0 +1,57 @@
+package chatUDP;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.MulticastSocket;
+import java.net.NetworkInterface;
+
+public class BatePapo extends Thread {
+
+	private static String usuario = null;
+	private static InetAddress endereco;
+	private static int porta;
+
+	public void run() {
+
+	}
+
+	public static void main(String[] args) {
+		if (args.length != 2) {
+			System.out.println("Parâmetros estão incorretos!");
+			System.out.println("java BatePapo <endereco_multicast> <porta>");
+			System.exit(1);
+		}
+
+		try {
+			endereco = InetAddress.getByName(args[0]);
+			porta = Integer.parseInt(args[1]);
+
+			BatePapo bp = new BatePapo();
+			bp.start();
+
+			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+			System.out.print("Digite seu nome: ");
+			usuario = reader.readLine();
+
+			MulticastSocket conexao = new MulticastSocket();
+			conexao.joinGroup(new InetSocketAddress(endereco, porta), NetworkInterface.getByInetAddress(endereco));
+			
+			byte[] msg = new byte[128];
+			
+			while(true) {
+				System.out.print("Digite a mensagem: ");
+				
+				String mensagem = reader.readLine();
+				
+				if(mensagem.equals("sair")) {
+					System.exit(0);
+				}
+			}
+
+		} catch (Exception e) {
+
+		}
+	}
+}
