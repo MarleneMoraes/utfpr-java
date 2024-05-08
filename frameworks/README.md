@@ -9,8 +9,15 @@ Tutor: Esp. Everton Rodrigues
 
 ## Conteúdo
 ### 01 | Introdução a Frameworks
+
 #### Conteúdo
+[Apostila - Introdução a Frameworks](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/01_introducao-a-frameworks.pdf)
 
-[Apostila - Revisão de SQL e Banco de Dados](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/01-introducao-a-frameworks/01_introducao-a-frameworks.pdf)
+### 02 | HTML
+#### Conteúdo
+[Apostila - HTML](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/02_html.pdf)
 
-**Pasta:** `01-introducao-a-frameworks`
+#### Material complementar
+- [MDN Web Docs (Mozilla Developer Network)](https://developer.mozilla.org/pt-BR/)
+- [W3C (World Wide Web Consortium)](https://www.w3.org/)
+- [WHATWG (Web Hypertext Application Technology Working Group)](https://whatwg.org/)
