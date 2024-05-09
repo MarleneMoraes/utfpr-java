@@ -20,4 +20,8 @@ Tutor: Arthur Gregório
 - [Java Ecosystem Survey (Snyk)](https://snyk.io/pt-BR/blog/jvm-ecosystem-report-2020/)
 - [VS Code versão Java](https://code.visualstudio.com/docs/languages/java/)
 
-**Pasta:** `01-gerenciamento-de-cidades`
+### 02 | Página Dinâmica
+
+> Nesta aula, nós transformamos a página estática em uma página dinâmica. Isso é necessário porque queremos que a tabela de cidades seja atualizada à medida que novas cidades são inseridas. Para isso, vamos precisar de mais uma tecnologia - o Freemarker. Em seguida, mudamos a página existente para uma nova pasta. Assim, o Spring Boot reconhece a página como uma página dinâmica. Também alteramos a extensão da página. O próximo passo é colocar o código dinâmico na página, usando a sintaxe do Freemarker. Também fazemos os ajustes necessários para implementar o padrão MVC no projeto.
+
+#### Material Complementar
