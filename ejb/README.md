@@ -19,3 +19,10 @@ Tutor: Esp. Everton Rodrigues
 - [Lista de Servidores Compatíveis](https://jakarta.ee/compatibility/)
 
 **Pasta:** `01-software-corporativo`
+
+### 02 | Jakarta EE
+#### Conteúdo
+
+- [Aula 02 - Jakarta EE](https://github.com/MarleneMoraes/utfpr-java/blob/main/ejs/02-jakarta-ee/jakartaee.pdf)
+
+**Pasta:** `02-jakarta-ee`
