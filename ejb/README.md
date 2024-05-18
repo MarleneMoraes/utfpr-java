@@ -26,3 +26,10 @@ Tutor: Esp. Everton Rodrigues
 - [Aula 02 - Jakarta EE](https://github.com/MarleneMoraes/utfpr-java/blob/main/ejs/02-jakarta-ee/jakartaee.pdf)
 
 **Pasta:** `02-jakarta-ee`
+
+### 03 | EJB (Teoria)
+#### Conteúdo
+
+- [Aula 03 - EJB Conceitos](https://github.com/MarleneMoraes/utfpr-java/blob/main/ejs/03-ejb-teoria/03-jakarta-enterprise-java-beans_conceitos.pdf)
+
+**Pasta:** `03-ejb-teoria`
