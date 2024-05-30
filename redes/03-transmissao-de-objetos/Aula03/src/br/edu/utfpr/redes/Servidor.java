@@ -38,28 +38,5 @@ public class Server {
 	}
 }
 
-public class Servidor {
-	private static ServerSocket servidorSocket;
-	private static Socket socket;
-	private static ObjectInputStream entrada;
-	private static DataOutputStream saida;
 
-	public static void main(String[] args) {
-		try {
-			servidorSocket = new ServerSocket(1234);
-			socket = servidorSocket.accept();
-			
-			entrada = new ObjectInputStream(socket.getInputStream());
-			Pessoa pessoa = (Pessoa) entrada.readObject();
-			
-			saida = new DataOutputStream(socket.getOutputStream());
-			saida.writeUTF(pessoa.getNome());
 
-			connection.close();
-		} catch (IOException ioe) {
-			Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ioe);
-		} catch (ClassNotFoundException cnfe) {
-			Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, cnfe);
-		}
-	}
-}
