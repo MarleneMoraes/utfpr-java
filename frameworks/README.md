@@ -36,3 +36,12 @@ Tutor: Esp. Everton Rodrigues
 - [Metodologia BEM (Blocks, Elements and Modifiers) - Introdução](https://getbem.com/introduction/)
 - [Metodologia BEM (Blocks, Elements and Modifiers) - Metodologia](https://en.bem.info/methodology/quick-start/)
 - [Metodologia BEM (Blocks, Elements and Modifiers) - Conceitos chave](https://en.bem.info/methodology/key-concepts/)
+
+### 04 | JavaScript e TypeScript
+#### Conteúdo
+- [Apostila - JavaScript](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/04_javascript.pdf)
+- [Apostila - TypeScript](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/04_typescript.pdf)
+
+#### Material complementar
+-[MDN Web Docs (Mozilla Developer Network) - JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-[Documentação do TypeScript](https://www.typescriptlang.org/)
