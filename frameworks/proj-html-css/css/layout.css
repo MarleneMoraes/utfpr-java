@@ -1,0 +1,13 @@
+.layout-cabecalho {
+    height: 60px;
+    border-bottom: solid 1px #ffcc00;
+}
+
+.layout-disciplinas {
+    padding-top: 30px 0px;
+}
+
+.layout__banner {
+    padding: 60px 0;
+    background-color: #ffcc00;
+}
