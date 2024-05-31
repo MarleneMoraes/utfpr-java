@@ -19,22 +19,31 @@
         <article class="card p-3">
         
         <#if cidadeAtual??>
-            <form action="/alterar" method="POST">
+            <form action="/alterar" method="POST" class="needs-validation" novalidate>
             <input type="hidden" name="nomeAtual" value="${(cidadeAtual.nome)!}"/>
             <input type="hidden" name="estadoAtual" value="${(estadoAtual.estado)!}"/>
         <#else>
-            <form action="/criar" method="POST">
+            <form action="/criar" method="POST" class="needs-validation" novalidate>
         </#if>
 
                 <div class="form-group">
                     <label for="nome">Cidade:</label>
-                    <input value="${(cidadeAtual.nome)!}" type="text" class="form-control" id="nome" name="nome"
+                    <input required value="${(cidadeAtual.nome)!}${nomeInformado!}" type="text" class="form-control ${(nome??)then('is-invalid', '')}" id="nome" name="nome"
                         placeholder="Informe o nome da cidade">
+                    
+                    <div class="invalid-feedback">
+                        ${nome!}
+                    </div>
+                    
                 </div>
                 <div class="form-group">
                     <label for="estado">Estado:</label>
-                    <input value="${(cidadeAtual.estado)!}" type="text" class="form-control" id="estado" name="estado"
+                    <input required maxlength="2" value="${(cidadeAtual.estado)!}${estadoInformado!}" type="text" class="form-control ${(estado??)then('is-invalid', '')" id="estado" name="estado"
                         placeholder="Informe o estado da cidade">
+
+                    <div class="invalid-feedback">
+                        ${estado!}
+                    </div>
                 </div>
 
                 <#if cidadeAtual??>
@@ -53,7 +62,7 @@
                 </tr>
             </thead>
             <tbody>
-                <#list cities as city>
+                <#list cidades as city>
                     <tr>
                         <td>${city.name}</td>
                         <td>${city.state}</td>
