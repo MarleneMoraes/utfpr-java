@@ -21,3 +21,18 @@ Tutor: Esp. Everton Rodrigues
 - [MDN Web Docs (Mozilla Developer Network)](https://developer.mozilla.org/pt-BR/)
 - [W3C (World Wide Web Consortium)](https://www.w3.org/)
 - [WHATWG (Web Hypertext Application Technology Working Group)](https://whatwg.org/)
+
+### 03 | CSS
+#### Conteúdo
+[Apostila - CSS](https://github.com/MarleneMoraes/utfpr-java/blob/main/frameworks/03_css.pdf)
+
+#### Material complementar
+- [MDN Web Docs (Mozilla Developer Network) - CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [MDN Web Docs (Mozilla Developer Network) - Tabela de cores](https://developer.mozilla.org/pt-BR/docs/Web/CSS/color_value)
+- [W3Schools - Seletor de cores](https://www.w3schools.com/colors/colors_picker.asp)
+- [Normalize - CSS](https://necolas.github.io/normalize.css/)
+- [CSS - Bootstrap(versão 3.4) - Grid System](https://getbootstrap.com/docs/3.4/css/#grid)
+- [Metodologia BEM (Blocks, Elements and Modifiers) - Site oficial](https://getbem.com/)
+- [Metodologia BEM (Blocks, Elements and Modifiers) - Introdução](https://getbem.com/introduction/)
+- [Metodologia BEM (Blocks, Elements and Modifiers) - Metodologia](https://en.bem.info/methodology/quick-start/)
+- [Metodologia BEM (Blocks, Elements and Modifiers) - Conceitos chave](https://en.bem.info/methodology/key-concepts/)
