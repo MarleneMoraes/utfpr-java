@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\_workspace\uftpr_pos_java\utfpr-java\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index

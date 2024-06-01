@@ -27,6 +27,8 @@ Tutor: Rodrigo Henrique Cunha Palácios
 - [Java Magazine - Functional Programming in Java](https://blogs.oracle.com/javamagazine/post/functional-programming-in-java-part-1-lists-lambdas-and-method-references)
 - [Java Magazine - Behind the scenes: how do lambdas work](https://blogs.oracle.com/javamagazine/post/behind-the-scenes-how-do-lambda-expressions-really-work-in-java)
 
+**Pasta:** `01-programacao-funcional-generics`
+
 **Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 13-14.
 
 ### 02 | IO API
@@ -43,6 +45,8 @@ Tutor: Rodrigo Henrique Cunha Palácios
 - [Java IO Tutorial](https://jenkov.com/tutorials/java-io/index.html)
 - [Java New Input/Output](https://howtodoinjava.com/java/nio/)
 - [Modern file input/output with Java: Going fast with NIO and NIO.2](https://blogs.oracle.com/javamagazine/post/java-nio-nio2-buffers-channels-async-future-callback)
+
+**Pasta:** `02-io-api`
 
 **Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 10.
 
@@ -63,3 +67,38 @@ Tutor: Rodrigo Henrique Cunha Palácios
 **Pasta:** `03-threads`
 
 **Material de Apoio:** SCHILDT, Herbert. *Java para iniciantes*. Disponível em: Minha Biblioteca, (6th edição). Grupo A, 2015. Capítulo 11.
+
+### 04 | Collections e Date Time API
+
+1. [Videoaula - Collections and Date Time API (parte 1)](https://www.youtube.com/watch?v=A0n3xlpXg5k)
+2. [Videoaula - Collections and Date Time API (parte 2)](https://www.youtube.com/watch?v=GFldw3IXijw)
+3. [Videoaula - Java Collections Explained (with examples)](https://www.youtube.com/watch?v=viTHc_4XfCA)
+
+   
+#### Documentação Oficial
+- [Java Tutorial - Standard Calendar](https://docs.oracle.com/javase/tutorial/datetime/iso/index.html)
+- [Java Tutorial - Collections](https://docs.oracle.com/javase/tutorial/collections/index.html)
+- [Java Magazine: Date and TimeURL](https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html)
+  
+#### Conteúdo Complementar
+- [Introduction to the Java 8 Date/Time API](https://www.baeldung.com/java-8-date-time-intro)
+- [Collections « Java Tutorial](http://www.java2s.com/Tutorial/Java/0140__Collections/Catalog0140__Collections.htm)
+- [Java Date Time Introduction](http://www.java2s.com/Tutorials/Java/Java_Date_Time/index.htm)
+- [Common Operations on Java Collections](https://reflectoring.io/common-operations-on-java-collections/)
+
+
+**Pasta:** `04-collections-datetime`
+
+### 05 | SOLID em Java
+
+1. [Videoaula - SOLID: Introdução](https://www.youtube.com/watch?v=3MU7GoDMDvo)
+2. [Videoaula - SOLID: Single Responsibility Principle](https://www.youtube.com/watch?v=fy6RQ-61qW4)
+3. [Videoaula - SOLID: Open/Closed e Dependency Inversion Principle](https://www.youtube.com/watch?v=VaRoygi08VM)
+4. [Videoaula - SOLID: Liskov Substitution Principle](https://www.youtube.com/watch?v=-ZPPgQQltuY)
+5. [Videoaula - SOLID: Interface Segregation Principle](https://www.youtube.com/watch?v=4qydjjdlzOo)
+  
+#### Conteúdo Complementar
+- [DRY, KISS & YAGNI Principles](https://henriquesd.medium.com/dry-kiss-yagni-principles-1ce09d9c601f)
+- [Desvendando o mundo mágico dos acrônimos: SOLID, KISS, YAGNI, DRY, DDD, TDD](https://dev.to/thiagomr/desvendando-o-mundo-magico-dos-acronimos-solid-kiss-yagni-dry-ddd-tdd-2onp)
+
+**Pasta:** `05-solid`
