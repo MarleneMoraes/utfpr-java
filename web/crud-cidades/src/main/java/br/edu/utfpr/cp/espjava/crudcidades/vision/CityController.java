@@ -3,8 +3,6 @@ package br.edu.utfpr.cp.espjava.crudcidades.vision;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.naming.Binding;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -17,83 +15,74 @@ import jakarta.validation.Valid;
 @Controller
 public class CityController {
 
-    private Set<City> cidades;
+    private Set<City> cities;
 
     public CityController() {
-        cidades = new HashSet<>();
+        cities = new HashSet<>();
     }
 
     @GetMapping("/")
     public String list(Model memory) {
-
-        memory.addAttribute("listaCidades", cidades);
-
+        memory.addAttribute("listCities", cities);
         return "/crud";
     }
 
-    @PostMapping("/criar")
-    public String create(@Valid City city, BindingResult result, Model memory) {
-
-        if (result.hasErrors()) {
-            result.getFieldErrors().forEach(
-                    error -> memory.addAttribute(
-                                error.getField(), error.getDefaultMessage())
-
-            );
-
-            memory.addAttribute("nomeInformado", city.getName());
-            memory.addAttribute("estadoInformado", city.getState());
-            memory.addAttribute("listaCidades", cidades);
+    @PostMapping("/create")
+    public String create(@Valid City city, BindingResult validation, Model memory) {
+        if (validation.hasErrors()) {
+            validation.getFieldErrors().forEach(error -> 
+                memory.addAttribute(error.getField(), error.getDefaultMessage()));
+            memory.addAttribute("nameProvided", city.getName());
+            memory.addAttribute("stateProvided", city.getState());
+            memory.addAttribute("listCities", cities);
+            return ("/crud");
         } else {
-            cidades.add(city);
+            cities.add(city);
         }
-
         return "redirect:/";
     }
 
-    @GetMapping("/excluir")
-    public String delete(
-            @RequestParam String name,
-            @RequestParam String state) {
-
-        cidades.removeIf(cidade -> cidade.getName().equals(name) &&
-                cidade.getState().equals(state));
-
+    @GetMapping("/delete")
+    public String delete(@RequestParam String name, @RequestParam String state) {
+        cities.removeIf(currentCity -> 
+            currentCity.getName().equals(name) && currentCity.getState().equals(state));
         return "redirect:/";
     }
 
-    @GetMapping("/preparaAlterar")
-    public String prepareUpdate(
-            @RequestParam String name,
-            @RequestParam String state,
-            Model memory) {
-        var cidadeAtual = cidades
-                .stream()
-                .filter(cidade -> cidade.getName().equals(name) &&
-                        cidade.getState().equals(state))
-                .findAny();
-
-        if (cidadeAtual.isPresent()) {
-            memory.addAttribute("cidadeAtual", cidadeAtual.get());
-            memory.addAttribute("listaCidades", cidades);
-
+    @GetMapping("/prepareModify")
+    public String prepareModify(@RequestParam String name, @RequestParam String state, Model memory) {
+        var currentCity = cities.stream()
+            .filter(city -> city.getName().equals(name) && city.getState().equals(state))
+            .findAny();
+        if (currentCity.isPresent()) {
+            memory.addAttribute("currentCity", currentCity.get());
+            memory.addAttribute("listCities", cities);
         }
         return "/crud";
     }
 
-    @GetMapping("/alterar")
-    public String update(
-            @RequestParam String name,
-            @RequestParam String state,
-            City city,
-            BindingResult result,
-            Model memory) {
-        cidades.removeIf(cidadeAtual -> cidadeAtual.getName().equals(name) &&
-                cidadeAtual.getState().equals(state));
+    @PostMapping("/modify")
+    public String modify(
+        @RequestParam String currentName, 
+        @RequestParam String currentState,
+        @Valid City city,
+        BindingResult validation,
+        Model memory) {
 
-        create(city, result, memory);
+        if (validation.hasErrors()) {
+            validation.getFieldErrors().forEach(error -> 
+                memory.addAttribute(error.getField(), error.getDefaultMessage()));
+            memory.addAttribute("currentCity", city);
+            memory.addAttribute("listCities", cities);
+            return "/crud";
+        }
+
+        cities.removeIf(currentCity -> 
+            currentCity.getName().equals(currentName) && 
+            currentCity.getState().equals(currentState));
+
+        cities.add(city);
 
         return "redirect:/";
     }
-
 }
