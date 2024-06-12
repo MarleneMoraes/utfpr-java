@@ -40,3 +40,7 @@ Tutor: Arthur Gregório
 ### 06 | Integração
 
 > Normalmente, um aplicativo real vai precisar mais do que salvar dados em memória - ele vai precisar de persistência em banco! É aí que entra o conteúdo dessa aula.
+
+### 07 | API Reativa
+
+> Nesta aula vamos construir uma nova aplicação que funciona como uma API, recebendo dados usando a arquitetura REST. Para fazer isso, vamos usar uma nova tecnologia do Spring - o Spring WebFlux.
