@@ -36,3 +36,7 @@ Tutor: Arthur Gregório
 ### 05 | Validação de Dados
 
 > Nesta aula, vamos ver como usar recursos do *Bean Validation Framework* juntamente com o Spring Boot, Freemarker e Bootstrap para garantir que o usuário consiga visualizar os erros e corrigir os dados sempre que necessário.
+
+### 06 | Integração
+
+> Normalmente, um aplicativo real vai precisar mais do que salvar dados em memória - ele vai precisar de persistência em banco! É aí que entra o conteúdo dessa aula.

@@ -11,82 +11,88 @@
 </head>
 
 <body>
-
-    <div class="container-fluid">
-        <div class="jumbotron mt-5">
-            <h1>GERENCIAMENTO DE CIDADES</h1>
-            <p>UM CRUD PARA CRIAR, ALTERAR, EXCLUIR E LISTAR CIDADES</p>
-        </div>
-
-            <#if currentCity??>
-                <form action="/modify" method="POST" class="needs-validation" novalidate>
-                <input type="hidden" name="currentName" value="${(currentCity.name)!}"/>
-                <input type="hidden" name="currentState" value="${(currentCity.state)!}"/>
-            <#else>
-                <form action="/create" method="POST" class="needs-validation" novalidate>
-            </#if>
-        
-            <div class="form-group">
-                <label for="name">Cidade:</label>
-                <input 
-                    value="${(currentCity.name)!}${nameProvided!}" 
-                    name="name" 
-                    type="text" 
-                    class="form-control ${(name??)?then('is-invalid', '')}" 
-                    placeholder="Informe o nome da cidade" 
-                    id="name">
-                
-                <div class="invalid-feedback">
-                    ${name!}
-                </div>
+    <section class="container-fluid">
+        <div class="container-fluid">
+            <div class="jumbotron mt-5">
+                <h1>GERENCIAMENTO DE CIDADES</h1>
+                <p>CRIAR, ALTERAR EXCLUIR E LISTAR CIDADES</p>
             </div>
-
-            <div class="form-group">
-                <label for="state">Estado:</label>
-                <input 
-                    value="${(currentCity.state)!}${stateProvided!}" 
-                    name="state" 
-                    type="text" 
-                    class="form-control ${(state??)?then('is-invalid', '')}" 
-                    placeholder="Informe o estado ao qual a cidade pertence"
-                    id="state">
-
-                <div class="invalid-feedback">
-                    ${state!}
-                </div>
-            </div>
-
-            <#if currentCity??>
-                <button type="submit" class="btn btn-warning">CONCLUIR ALTERAÇÃO</button>
-            <#else>
-                <button type="submit" class="btn btn-primary">CRIAR</button>
-            </#if>
             
-        </form>
-        <table class="table table-striped table-hover mt-5">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Nome</th>
-                    <th>Estado</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <#list listCities as city >
+            <article class="card p-3">
+                <#if currentCity??>
+                    <form action="/update" method="POST" class="needs-validation" novalidate>
+                    <input type="hidden" name="currentName" value="${(currentCity.name)!}"/>
+                    <input type="hidden" name="currentState" value="${(currentCity.state)!}"/>
+                <#else>
+                    <form action="/create" method="POST" class="needs-validation" novalidate>
+                </#if>
+            
+                <div class="form-group">
+                    <label for="name">Cidade:</label>
+                    <input 
+                        value="${(currentCity.name)!}${nameProvided!}" 
+                        name="name" 
+                        type="text" 
+                        class="form-control ${(name??)?then('is-invalid', '')}" 
+                        placeholder="Informe o nome da cidade" 
+                        id="name">
+                    
+                    <div class="invalid-feedback">
+                        ${name!}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">Estado:</label>
+                    <input 
+                        value="${(currentCity.state)!}${stateProvided!}" 
+                        name="state" 
+                        type="text" 
+                        class="form-control ${(state??)?then('is-invalid', '')}" 
+                        placeholder="Informe o estado ao qual a cidade pertence"
+                        id="state">
+
+                    <div class="invalid-feedback">
+                        ${state!}
+                    </div>
+                </div>
+
+                <#if currentCity??>
+                    <button type="submit" class="btn btn-warning">CONCLUIR ALTERAÇÃO</button>
+                <#else>
+                    <button type="submit" class="btn btn-primary">CRIAR</button>
+                </#if>
+            </form>
+            </article>
+
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
                     <tr>
-                        <td>${city.name}</td>
-                        <td>${city.state}</td>
-                        <td>
-                            <div class="d-flex d-justify-content-center">
-                            <a href="/prepareModify?name=${city.name}&state=${city.state}" class="btn btn-warning mr-3">ALTERAR</a>
-                            <a href="/delete?name=${city.name}&state=${city.state}" class="btn btn-danger">EXCLUIR</a>
-                            </div>
-                        </td>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Ações</th>
                     </tr>
-                </#list>
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    <#list listCities as city >
+                        <tr>
+                            <td>${city.name}</td>
+                            <td>${city.state}</td>
+                            <td>
+                                <div class="d-flex">
+                                <a href="/prepareUpdate?name=${city.name}&state=${city.state}" class="btn btn-warning mr-3">ALTERAR</a>
+                                <a href="/delete?name=${city.name}&state=${city.state}" class="btn btn-danger">EXCLUIR</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </#list>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
