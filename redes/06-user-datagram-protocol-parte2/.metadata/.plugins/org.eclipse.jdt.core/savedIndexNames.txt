@@ -1,4 +1,2 @@
 INDEX VERSION 1.131+C:\_workspace\uftpr_pos_java\utfpr-java\redes\06-user-datagram-protocol-parte2\.metadata\.plugins\org.eclipse.jdt.core
-1544056821.index
 1865797976.index
-3964976183.index
