@@ -45,3 +45,6 @@ Tutor: Esp. Everton Rodrigues
 #### Material complementar
 -[MDN Web Docs (Mozilla Developer Network) - JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -[Documentação do TypeScript](https://www.typescriptlang.org/)
+
+### 05 | Componentes e Data Binding
+(Somente vídeos da plataforma interna)
