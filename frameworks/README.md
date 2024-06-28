@@ -53,7 +53,7 @@ Tutor: Esp. Everton Rodrigues
 (Somente vídeos da plataforma interna)
 
 #### Material complementar
--[Biblioteca PrimeNG](https://primeng.org/installation)
--[Biblioteca Angular Material](https://material.angular.io/components/categories)
--[Biblioteca NG-Bootstrap](https://ng-bootstrap.github.io/#/components/accordion/overview)
--[Biblioteca Clarity](https://clarity.design/)
+- [Biblioteca PrimeNG](https://primeng.org/installation)
+- [Biblioteca Angular Material](https://material.angular.io/components/categories)
+- [Biblioteca NG-Bootstrap](https://ng-bootstrap.github.io/#/components/accordion/overview)
+- [Biblioteca Clarity](https://clarity.design/)
