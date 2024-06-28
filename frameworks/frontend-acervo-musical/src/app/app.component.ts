@@ -6,11 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nomeCantor = '';
-  numero = 0;
-
-  adicionar() {
-    this.numero++;
-    this.nomeCantor = '';
-  }
 }

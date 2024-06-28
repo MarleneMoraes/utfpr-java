@@ -1,15 +1,42 @@
-<div class="container">
-  <div class="alert alert-success" role="alert">
-    Cantor adicionado: <strong>{{nomeCantor}}</strong>
-  </div>
-  <div class="form-group">
-    <label>Nome</label>
-    <input type="text" class="form-control" placeholder="Nome do cantor"
-      [(ngModel)]="nomeCantor"/>
-  </div>
-
-  <button type="button" class="btn btn-primary"
-    (click)="adicionar()" [disabled]="nomeCantor.length == 0">
-    Adicionar
-  </button>
-</div>
+<p-tabView styleClass="tabview-custom">
+  <p-tabPanel>
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-2">
+        <i class="pi pi-calendar"></i>
+        <span class="font-bold white-space-nowrap m-0">
+          Amy Elsner
+        </span>
+      </div>
+    </ng-template>
+    <p>
+      Lorem ipsum dolor sit amet...
+    </p>
+  </p-tabPanel>
+  <p-tabPanel header="Header II">
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-2">
+        <i class="pi pi-user"></i>
+        <span class="font-bold white-space-nowrap m-0">
+          Onyama Limba
+        </span>
+      </div>
+    </ng-template>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+    </p>
+  </p-tabPanel>
+  <p-tabPanel header="Header III">
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-2">
+        <i class="pi pi-search"></i>
+        <span class="font-bold white-space-nowrap m-0">
+          Ioni Bowcher
+        </span>
+        <i class="pi pi-cog"></i>
+      </div>
+    </ng-template>
+    <p>
+      At vero eos et accusamus et iusto odio dignissimos...
+    </p>
+  </p-tabPanel>
+</p-tabView>

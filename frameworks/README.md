@@ -48,3 +48,12 @@ Tutor: Esp. Everton Rodrigues
 
 ### 05 | Componentes e Data Binding
 (Somente vídeos da plataforma interna)
+
+### 06 | Diretivas e Binding
+(Somente vídeos da plataforma interna)
+
+#### Material complementar
+-[Biblioteca PrimeNG](https://primeng.org/installation)
+-[Biblioteca Angular Material](https://material.angular.io/components/categories)
+-[Biblioteca NG-Bootstrap](https://ng-bootstrap.github.io/#/components/accordion/overview)
+-[Biblioteca Clarity](https://clarity.design/)
