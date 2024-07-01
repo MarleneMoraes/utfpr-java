@@ -1,0 +1,14 @@
+.col-id {
+  width: 100px;
+  text-align: center;
+}
+
+.col-acoes {
+  width: 150px;
+  text-align: center;
+  padding: 0;
+}
+
+.col-acoes .p-button {
+  margin-right: 5px;
+}

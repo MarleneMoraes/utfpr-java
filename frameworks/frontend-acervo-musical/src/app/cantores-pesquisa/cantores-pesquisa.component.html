@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="grid">
+    <div class="col-12">
+      <h1>Cantores</h1>
+    </div>
+
+    <div class="col-12 p-fluid">
+      <label>Nome</label>
+      <input pInputText type="text">
+    </div>
+
+    <div class="col-12 p-fluid">
+      <label>País</label>
+      <input pInputText type="text">
+    </div>
+
+    <div class="col-12">
+      <button pButton type="submit" label="Buscar"></button>
+    </div>
+
+    <div class="grid">
+      <div class="col-12">
+        <p-table [value]="cantores" [paginator]="true" [rows]="5"
+          [showCurrentPageReport]="true"
+          currentPageReportTemplate="Exibindo de {first} a {last} de {totalRecords} cantores">
+          <ng-template pTemplate="header">
+              <tr>
+                  <th class="col-id">ID</th>
+                  <th>Nome</th>
+                  <th>País</th>
+                  <th class="col-acoes"></th>
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-cantores>
+              <tr>
+                  <td class="col-id">{{ cantores.id }}</td>
+                  <td>{{ cantores.nome }}</td>
+                  <td [ngStyle]="{ color: cantores.pais === 'Brasil' ? '#2eb82e' : '#495057'}">{{ cantores.pais }}</td>
+                  <!-- <td [style.color]="color: cantores.pais === 'Brasil' ? '#2eb82e' : '#495057'">{{ cantores.pais }}</td> -->
+                  <td class="col-acoes">
+                    <a pButton icon="pi pi-pencil"  pTooltip="editar" tooltipPosition="top"></a>
+                    <button pButton icon="pi pi-trash"  pTooltip="exlcuir" tooltipPosition="top"></button>
+                  </td>
+              </tr>
+          </ng-template>
+      </p-table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <a pButton label="Novo Cantor"></a>
+  </div>
+</div>
