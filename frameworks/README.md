@@ -57,3 +57,11 @@ Tutor: Esp. Everton Rodrigues
 - [Biblioteca Angular Material](https://material.angular.io/components/categories)
 - [Biblioteca NG-Bootstrap](https://ng-bootstrap.github.io/#/components/accordion/overview)
 - [Biblioteca Clarity](https://clarity.design/)
+
+### 07 | Formulários de Pesquisa
+
+(Somente vídeos da plataforma interna)
+
+### 08 | Formulários de Cadastro
+
+(Somente vídeos da plataforma interna)
