@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-smbg-dark d-flex justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a 
+                    class="nav-link btn btn-danger p-2" 
+                    href="/logout">Sair da aplicação</a>
+            </li>
+        </ul>
+    </nav>
     <section class="container-fluid">
         <div class="container-fluid">
             <div class="jumbotron mt-5">
