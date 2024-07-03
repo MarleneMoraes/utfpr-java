@@ -48,3 +48,7 @@ Tutor: Arthur Gregório
 ### 08 | Segurança
 
 > A maioria das aplicações Web têm algum tipo de segurança. Segurança é um termo amplo que abrange vários aspectos, como conexão segura, cifragem de dados entre outros. Nesta seção, nós vamos focar em dois dos mecanismos mais comuns de segurança: autenticação e autorização.
+
+### 09 | Listeners, Sessão e Cookies
+
+> Nesta aula vamos falar sobre dois tópicos complementares no contexto do aplicativo que estamos usando como exemplo, mas importantes no desenvolvimento de aplicações Web.
