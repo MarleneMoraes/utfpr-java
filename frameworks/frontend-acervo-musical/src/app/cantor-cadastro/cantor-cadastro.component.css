@@ -1,0 +1,12 @@
+.card-invalido {
+  background-color: red;
+  color: #fff;
+}
+
+.card-requerido {
+  color: red;
+}
+
+.p-button{
+  margin-right: .25em;
+}

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontend-acervo-musical": {
+    "frontend-funcionarios-departamentos": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontend-acervo-musical",
+            "outputPath": "dist/frontend-funcionarios-departamentos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -28,7 +28,7 @@
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeflex/primeflex.css",
+              "/node_modules/primeflex/primeflex.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "frontend-acervo-musical:build:production"
+              "browserTarget": "frontend-funcionarios-departamentos:build:production"
             },
             "development": {
-              "browserTarget": "frontend-acervo-musical:build:development"
+              "browserTarget": "frontend-funcionarios-departamentos:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontend-acervo-musical:build"
+            "browserTarget": "frontend-funcionarios-departamentos:build"
           }
         },
         "test": {
@@ -100,6 +100,6 @@
     }
   },
   "cli": {
-    "analytics": "fb7f6652-8626-4b1a-8639-558551f94e92"
+    "analytics": "b8507b2e-6ba0-4c24-933a-4c6785e5e60c"
   }
 }

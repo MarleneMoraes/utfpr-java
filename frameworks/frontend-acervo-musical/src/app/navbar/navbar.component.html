@@ -1,0 +1,33 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="grid">
+      <div class="col-12">
+        <a href="javascript:;" class="navbar-menu" (click)="showMenu = !showMenu">
+          <i class="pi pi-bars"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <ul class="navbar-opcoes" [hidden]="!showMenu">
+    <li class="navbar-usuario">Usuário</li>
+    <li class="navbar-menuitem">
+      <a href="">Cantores</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a href="">Categorias</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a href="">Gravações</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a href="">Gravadoras</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a href="">Músicas</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a href="">Pessoas</a>
+    </li>
+  </ul>
+</nav>

@@ -1,15 +1,2 @@
-<div class="container">
-  <div class="alert alert-success" role="alert">
-    Cantor adicionado: <strong>{{nomeCantor}}</strong>
-  </div>
-  <div class="form-group">
-    <label>Nome</label>
-    <input type="text" class="form-control" placeholder="Nome do cantor"
-      [(ngModel)]="nomeCantor"/>
-  </div>
-
-  <button type="button" class="btn btn-primary"
-    (click)="adicionar()" [disabled]="nomeCantor.length == 0">
-    Adicionar
-  </button>
-</div>
+<app-navbar></app-navbar>
+<app-cantor-cadastro></app-cantor-cadastro>
