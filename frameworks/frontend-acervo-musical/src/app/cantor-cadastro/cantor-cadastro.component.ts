@@ -20,6 +20,7 @@ export class CantorCadastroComponent {
 
 
   salvar(cantorForm: NgForm) {
+    console.log(cantorForm)
     cantorForm.reset({ pais: '' });
   }
 }
