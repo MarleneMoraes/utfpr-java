@@ -33,15 +33,29 @@ public class CityController {
     }
     
     @GetMapping("/")
-    public String list(Model memory) {
+    public String list(
+        Model memory, 
+        Principal user, 
+        HttpSession session,
+        HttpServeletResponse response) {
+
+        response.addCookie(new Cookie("list", LocalDateTime.now().toString()));
+
         memory.addAttribute("listCities", 
                             this.cityConversion(repository.findAll()));
-
+                        
+        session.setAttribute("currentUser", user.getName());
         return "/crud";
     }
 
     @PostMapping("/create")
-    public String create(@Valid City city, BindingResult validation, Model memory) {
+    public String create(
+        @Valid City city, 
+        BindingResult validation, 
+        Model memory, 
+        HttpServeletResponse response) {
+
+        response.addCookie(new Cookie("create", LocalDateTime.now().toString()));
 
         if (validation.hasErrors()) {
             validation.getFieldErrors().forEach(
@@ -61,9 +75,11 @@ public class CityController {
 
     @GetMapping("/delete")
     public String delete(
-            @RequestParam String name,
-            @RequestParam String state) {
-        
+        @RequestParam String name,
+        @RequestParam String state,
+        HttpServeletResponse response) {
+
+        response.addCookie(new Cookie("delete", LocalDateTime.now().toString()));
         
         var foundCity = repository.findByNameAndState(name, state);
 
@@ -94,7 +110,10 @@ public class CityController {
             @RequestParam String currentState,
             @Valid City city,
             BindingResult validation,
-            Model memory) {
+            Model memory, 
+            HttpServeletResponse response) {
+
+                response.addCookie(new Cookie("update", LocalDateTime.now().toString()));
 
                 var currentCity = repository.findByNameAndState(currentName, currentState);
 
@@ -108,5 +127,11 @@ public class CityController {
                 };
 
         return "redirect:/";
+    }
+
+    @GetMapping("/show")
+    @ResponseBody
+    public String showCookie(@CookieValue String list) {
+        return "Último acesso ao método list()" + list;
     }
 }

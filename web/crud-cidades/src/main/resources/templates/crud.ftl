@@ -12,6 +12,7 @@
 
 <body>
     <nav class="navbar navbar-expand-smbg-dark d-flex justify-content-end">
+        <span class="navbar-brand text-white">${Session.currentUser}</span>
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a 

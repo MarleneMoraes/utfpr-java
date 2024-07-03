@@ -10,26 +10,35 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @EnableWebSecurity
 @Configuration
-public class SecurityConfig {
-    @Bean
-    public SecurityFilterChain filter(HttpSecurity http) throws Exception {
-        return http
-                .csrf().disable()
-                .authorizeHttpRequests()
-                .requestMatchers("/").hasAnyRole("toList", "admin")
-                .requestMatchers("/create", "/delete", "/update", "/prepareUpdate").hasRole("admin")
-                .anyRequest().denyAll()
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+   protected void configure(HttpSecurity http) throws Exception {
+        http
+            .csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/").hasAnyAuthority("toList", "admin")
+            .antMatchers("/create").hasAuthority("admin")
+            .antMatchers("/delete").hasAuthority("admin")
+            .antMatchers("/update").hasAuthority("admin")
+            .antMatchers("/prepareUpdate").hasAuthority("admin")
+            .antMatchers("/show").authenticated()
+            .anyRequest().denyAll()
                 .and()
-                .formLogin().permitAll()
-                .loginPage("/login.html").permitAll()
+            .formLogin()
+            .loginPage("/login.html").permitAll()
+            .defautSuccessUrl("/", false)
                 .and()
-                .logout().permitAll()
-                .and()
-                .build();
+            .logout().permitAll();
     }
 
     @Bean
     public PasswordEncoder cipher() {
         return new BCryptPasswordEncoder();
+    }
+
+    @EventListener(InteractiveAuthenticationSuccessEvent.class)
+    public void printUsuarioAtual(InteractiveAuthenticationSuccessEvent event) {
+        var user = event.getAuthentication().getName();
+
+        System.out.println(user);
     }
 }
