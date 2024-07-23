@@ -35,3 +35,9 @@
 - Java Web (`web`)
 - Frameworks Web (`frameworks`)
 - Enterprise Java Beans (`ejb`)
+
+### 4º Trimestre
+
+- Desenvolvimento Java Para Dispositivos Móveis (`android`)
+- Teste de Software (`testsoft`)
+- XML e Web Services (`webservices`)
