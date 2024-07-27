@@ -17,3 +17,8 @@ Tutor: Esp. Everton Rodrigues
 
 **Pasta:** `01-xml`
 
+### 02 | XML Schema (xsD)
+#### Conteúdo
+- [Aula 02 - XML Schema (xsD)](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/02-xml-schema-xsd/xml-schema-xsd.pdf)
+
+**Pasta:** `02-xml-schema-xsd`
