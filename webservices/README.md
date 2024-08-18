@@ -33,3 +33,8 @@ Tutor: Esp. Everton Rodrigues
 
 **Pasta:** `03-manipulacao-de-xml-em-java`
 
+### 04 | Manipulação de XML em Java (JaxP)
+#### Conteúdo
+- [Aula 04 - Manipulação de XML em Java (JaxP)](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/04-manipulacao-de-xml-em-java-jaxp/manipulacao-de-xml-em-java-jaxp.pdf)
+
+**Pasta:** `04-manipulacao-de-xml-em-java-jaxp`
