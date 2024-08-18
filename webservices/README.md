@@ -38,3 +38,10 @@ Tutor: Esp. Everton Rodrigues
 - [Aula 04 - Manipulação de XML em Java (JaxP)](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/04-manipulacao-de-xml-em-java-jaxp/manipulacao-de-xml-em-java-jaxp.pdf)
 
 **Pasta:** `04-manipulacao-de-xml-em-java-jaxp`
+
+### 05 | WebServices
+#### Conteúdo
+- [Aula 05 - WebServices](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/05-webservices/webservices.pdf)
+- [Aula Prática - SOAP](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/05-webservices/AulaSoap)
+
+**Pasta:** `05-webservices`
