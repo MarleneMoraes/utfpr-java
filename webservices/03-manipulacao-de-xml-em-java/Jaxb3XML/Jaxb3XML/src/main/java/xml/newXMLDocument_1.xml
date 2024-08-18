@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Sessao
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='chat.xsd'>
+    <Chat>
+        <Participante id="1" nome="Alexandre"></Participante>
+        <Participante id="2" nome="Laura"></Participante>
+        <Mensagem>
+            <Data>2020-12-31</Data>
+            <Hora>10:20:34</Hora>
+            <Corpo>Oi, tudo bem?</Corpo>
+        </Mensagem>
+    </Chat>
+    <Chat>
+        <Participante id="2" nome="Laura"></Participante>
+        <Participante id="1" nome="Alexandre"></Participante>
+        <Mensagem>
+            <Data>2020-12-31</Data>
+            <Hora>10:21:34</Hora>
+            <Corpo>Tudo e vc?</Corpo>
+        </Mensagem>
+    </Chat>
+    <Chat>
+        <Participante id="1" nome="Alexandre"></Participante>
+        <Participante id="2" nome="Laura"></Participante>
+        <Mensagem>
+            <Data>2020-12-31</Data>
+            <Hora>10:30:34</Hora>
+            <Corpo>Blz</Corpo>
+        </Mensagem>
+    </Chat>
+
+</Sessao>

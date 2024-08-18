@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="aluno" type="aluno"/>
+
+  <xs:element name="disciplina" type="disciplina"/>
+
+  <xs:element name="lista_alunos" type="alunos"/>
+
+  <xs:complexType name="alunos">
+    <xs:sequence>
+      <xs:element ref="aluno" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aluno">
+    <xs:sequence>
+      <xs:element name="disciplinas" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="disciplina" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+    <xs:attribute name="nome" type="xs:string"/>
+    <xs:attribute name="ra" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="disciplina">
+    <xs:sequence>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

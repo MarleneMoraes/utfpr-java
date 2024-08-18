@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lista_alunos>
+    <aluno id="1" nome="Alexandre " ra="a1020129 1029"/>
+    <aluno id="2" nome="Flavia " ra="RA06978">
+        <disciplinas>
+            <disciplina>
+                <nome>Sistemas Operacionais</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Redes de computadores</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Programacao OO</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Java X</nome>
+            </disciplina>
+        </disciplinas>
+    </aluno>
+    <aluno id="3" nome="Maria " ra="RA72411">
+        <disciplinas>
+            <disciplina>
+                <nome>Topicos em CC</nome>
+            </disciplina>
+        </disciplinas>
+    </aluno>
+    <aluno id="4" nome="Luana " ra="RA43270">
+        <disciplinas>
+            <disciplina>
+                <nome>Processo de Sw</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Qualidade de Sw</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Redes de computadores</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Algoritmos</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Estrutura de dados</nome>
+            </disciplina>
+        </disciplinas>
+    </aluno>
+    <aluno id="5" nome="Pedro " ra="RA63727">
+        <disciplinas>
+            <disciplina>
+                <nome>Banco de dados 1</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Banco de dados 2</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Analise de algoritmos</nome>
+            </disciplina>
+            <disciplina>
+                <nome>Teoria da computacao</nome>
+            </disciplina>
+        </disciplinas>
+    </aluno>
+</lista_alunos>

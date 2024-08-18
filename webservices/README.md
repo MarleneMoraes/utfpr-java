@@ -22,3 +22,14 @@ Tutor: Esp. Everton Rodrigues
 - [Aula 02 - XML Schema (xsD)](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/02-xml-schema-xsd/xml-schema-xsd.pdf)
 
 **Pasta:** `02-xml-schema-xsd`
+
+### 03 | Manipulação de XML em Java
+#### Conteúdo
+- [Aula 03 - Manipulação de XML em Java](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/03-manipulacao-de-xml-em-java/manipulacao-de-xml-em-java.pdf)
+
+#### Material Complementar
+- [JakartaEE - JAXB](https://eclipse-ee4j.github.io/jaxb-ri/)
+- [XmlOPS](https://github.com/alerario/XmlOPS)
+
+**Pasta:** `03-manipulacao-de-xml-em-java`
+

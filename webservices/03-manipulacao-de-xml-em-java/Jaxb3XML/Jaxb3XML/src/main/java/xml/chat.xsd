@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Sessao">
+        <xs:complexType>
+            <xs:sequence minOccurs="1">
+                <xs:element ref="Chat" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Chat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Participante" maxOccurs="2" minOccurs="2"/>
+                <xs:element name="Mensagem">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Data" type="xs:date"/>
+                            <xs:element name="Hora" type="xs:time"/>
+                            <xs:element name="Corpo" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Participante">
+        <xs:complexType>
+            <xs:attribute name="id" type="xs:int" use="optional"/>
+            <xs:attribute name="nome" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
