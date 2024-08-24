@@ -19,3 +19,10 @@ Tutor: Esp. Adriano dos S. Dias
 - [Vídeo: Testes Unitários](https://www.youtube.com/watch?v=Pl1PS6fwTys&list=PLD9owJ2oJvA87E1wpFORq8E06YV_wqrD9)
 
 **Pasta:** `01-teste-de-unidade01`
+
+### 02 | Teste de unidade (Parte 2)
+#### Conteúdo
+
+[Apostila - Teste de Unidade - parte 2](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/02-teste-de-unidade02/apostila_-_teste-de-unidade.pdf)
+
+**Pasta:** `02-teste-de-unidade02`
