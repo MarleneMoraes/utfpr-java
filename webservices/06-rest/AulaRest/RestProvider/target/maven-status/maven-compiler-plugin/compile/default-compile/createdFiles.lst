@@ -1,0 +1,4 @@
+br/data/CrudCidade.class
+br/restserver/JakartaRestConfiguration.class
+br/restserver/resources/JakartaEE9Resource.class
+br/data/Cidade.class

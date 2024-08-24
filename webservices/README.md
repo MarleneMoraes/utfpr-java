@@ -45,3 +45,10 @@ Tutor: Esp. Everton Rodrigues
 - [Aula Prática - SOAP](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/05-webservices/AulaSoap)
 
 **Pasta:** `05-webservices`
+
+### 06 | REST
+#### Conteúdo
+- [Aula 06 - REST](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/06-rest/rest.pdf)
+- [SOAP UI](https://www.soapui.org/)
+
+**Pasta:** `06-rest`
