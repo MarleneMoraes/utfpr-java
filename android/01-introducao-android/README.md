@@ -107,3 +107,12 @@
 - [Executar apps em um dispositivo de hardware](https://developer.android.com/studio/run/device?hl=pt-br)
 - [Instalar drivers USB do Fabricante do Dispostivo](https://developer.android.com/studio/run/oem-usb.html)
 - [Obter o driver USB do Google para o Dispositivo Móvel](https://developer.android.com/studio/run/win-usb)
+
+# 05 | Estrutura de um projeto e mapeando componentes no código
+## Recursos em um App
+- [Visão geral dos recursos](https://developer.android.com/guide/topics/resources/providing-resources?hl=pt-br)
+- [Fornecimento de recursos](https://developer.android.com/guide/topics/resources/providing-resources?hl=pt-br#AlternativeResources)
+- [Acessando os recursos](https://developer.android.com/guide/topics/resources/providing-resources?hl=pt-br#Accessing)
+
+## Manifesto do aplicativo
+- [AndroidManifest.xml](https://developer.android.com/guide/topics/manifest/manifest-intro?hl=pt-br)
