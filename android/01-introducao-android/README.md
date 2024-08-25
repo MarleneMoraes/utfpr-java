@@ -101,3 +101,9 @@
 ## Resolução de Problemas
 - [Resolver problemas conhecidos com o Android Emulator](https://developer.android.com/studio/run/emulator-troubleshooting?hl=pt-br)
 - [Fixed Error Emulator process was killed](https://www.youtube.com/watch?v=AOK9ZxiBOGg)
+
+# 04 | Executando um Aplicativo no Dispositivo
+## Guias sobre a Ferramenta
+- [Executar apps em um dispositivo de hardware](https://developer.android.com/studio/run/device?hl=pt-br)
+- [Instalar drivers USB do Fabricante do Dispostivo](https://developer.android.com/studio/run/oem-usb.html)
+- [Obter o driver USB do Google para o Dispositivo Móvel](https://developer.android.com/studio/run/win-usb)
