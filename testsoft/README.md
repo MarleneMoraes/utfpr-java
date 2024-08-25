@@ -33,3 +33,13 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Praticando Test-Driven Development (TDD)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/03-test-driven-development-tdd/apostila_tdd.pdf)
 
 **Pasta:** `03-test-driven-development`
+
+
+#### Conteúdo
+
+[Apostila - Mock Objects - parte 1](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/04-mock-objects01/apostila_mock_objects.pdf)
+
+#### Material Complementar
+- [Apostila - Testes de Unidade - Mocking](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/04-mock-objects01/apostila_teste_de_unidade-mocking.pdf)
+
+**Pasta:** `04-mock-objects01`
