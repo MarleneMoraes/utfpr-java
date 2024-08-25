@@ -84,3 +84,20 @@
 
 ## Configurações de Preview
 - [Referência de atributos de ferramentas](https://developer.android.com/studio/write/tool-attributes?hl=pt-br)
+
+# 03 | Executando um Aplicativo no Emulador Android
+## Guias sobre a Ferramenta
+- [Executar apps no Android Emulator](https://developer.android.com/studio/run/emulator?hl=pt-br)
+- [Criar e gerenciar dispositivos virtuais](https://developer.android.com/studio/run/managing-avds?hl=pt-br)
+- [Iniciar o emulador pela linha de comando](https://developer.android.com/studio/run/emulator-commandline?hl=pt-br)
+- [Criar e executar seu aplicativo](https://developer.android.com/studio/run/index.html)
+
+## Aceleração de Hardware
+- [Configurar a aceleração de hardware para o Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?hl=pt-br)
+
+## Identificar Hardware do Aparelho
+- [Aplicativo CPU-Z](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&hl=pt_BR&pli=1)
+
+## Resolução de Problemas
+- [Resolver problemas conhecidos com o Android Emulator](https://developer.android.com/studio/run/emulator-troubleshooting?hl=pt-br)
+- [Fixed Error Emulator process was killed](https://www.youtube.com/watch?v=AOK9ZxiBOGg)
