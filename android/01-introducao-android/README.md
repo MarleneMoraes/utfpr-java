@@ -48,3 +48,39 @@
 ## Complementos
 - [APKMirror](https://www.apkmirror.com/)
 
+# 02 | Ambiente de Desenvolvimento Android Studio
+## Visão Geral
+### Conteúdo
+- [Download Android Studio com SDK Tools](https://developer.android.com/studio?hl=en)
+
+### Material Complementar
+- [Conheça o Android Studio](https://developer.android.com/studio/intro?hl=pt-br)
+
+## Guias sobre a Ferramenta
+- [Configurar o Android Studio](https://developer.android.com/studio/intro/studio-config?hl=pt-br)
+- [Atualizar o IDE e o SDK Tools](https://developer.android.com/studio/intro/update)
+- [Migrar para o Android Studio](https://developer.android.com/studio/intro/migrate?hl=pt-br)
+
+## SDK Tools (ADT)
+- [Ferramentas de linha de comando](https://developer.android.com/studio/command-line?hl=pt-br)
+- [Download apenas do SDK (ADT)](https://developer.android.com/studio?hl=en#:~:text=Command%20line%20tools%20only)
+
+## Desenvolvimento
+- [Visão geral de projetos](https://developer.android.com/studio/projects?hl=pt-br)
+- [Configure sua versão](https://developer.android.com/studio/build/?hl=pt-br)
+- [Depure seu aplicativo](https://developer.android.com/studio/debug?hl=pt-br)
+
+## Otimização
+- [Otimizar a velocidade do seu build](https://developer.android.com/build/optimize-your-build?hl=pt-br)
+
+## Resolução de Problemas
+- [Resolver problemas do Android Studio](https://developer.android.com/studio/troubleshoot.html?hl=pt-br)
+- [Configurar o ambiente de desenvolvimento integrado para máquinas com pouca memória](https://developer.android.com/studio/intro/studio-config?hl=pt-br#low_memory)
+- [Improving Android Studio Performance on Memory-Constrained Machines](https://www.youtube.com/watch?v=3TENdS9Qqcc)
+
+## Requisitos para Publicação do App
+- [Atender ao requisito de nível desejado da API do Google Play](https://developer.android.com/google/play/requirements/target-sdk?hl=pt-br)
+- [Overview of all Android API Levels](https://apilevels.com/)
+
+## Configurações de Preview
+- [Referência de atributos de ferramentas](https://developer.android.com/studio/write/tool-attributes?hl=pt-br)
