@@ -11,7 +11,7 @@ Tutor: Esp. Adriano dos S. Dias
 ### 01 | Teste de unidade (Parte 1)
 #### Conteúdo
 
-[Apostila - Teste de Unidade - parte 1](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/01-teste-de-unidade01/apostila_-_teste-de-unidade.pdf)
+[Apostila - Teste de Unidade - parte 1](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/01-teste-de-unidade01/apostila_teste-de-unidade.pdf)
 
 #### Material Complementar
 - [Apostila - Visões sobre Teste de Software](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/01-teste-de-unidade01/apostila_visoes-sobre-teste-de-software.pdf)
@@ -23,6 +23,13 @@ Tutor: Esp. Adriano dos S. Dias
 ### 02 | Teste de unidade (Parte 2)
 #### Conteúdo
 
-[Apostila - Teste de Unidade - parte 2](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/02-teste-de-unidade02/apostila_-_teste-de-unidade.pdf)
+[Apostila - Teste de Unidade - parte 2](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/02-teste-de-unidade02/apostila_teste-de-unidade.pdf)
 
 **Pasta:** `02-teste-de-unidade02`
+
+### 03 | Test-Driven Development (TDD)
+#### Conteúdo
+
+[Apostila - Praticando Test-Driven Development (TDD)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/03-test-driven-development-tdd/apostila_tdd.pdf)
+
+**Pasta:** `03-test-driven-development`
