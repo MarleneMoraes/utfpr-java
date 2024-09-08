@@ -40,7 +40,7 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Mock Objects - parte 1](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/04-mock-objects01/apostila_mock_objects.pdf)
 
 #### Material Complementar
-- [Apostila - Testes de Unidade - Mocking](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/04-mock-objects01/apostila_teste_de_unidade-mocking.pdf)
+[Apostila - Testes de Unidade - Mocking](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/04-mock-objects01/apostila_teste_de_unidade-mocking.pdf)
 
 **Pasta:** `04-mock-objects01`
 
@@ -50,3 +50,10 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Mock Objects - parte 2](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/05-mock-objects02/apostila_mock_objects.pdf)
 
 **Pasta:** `05-mock-objects02`
+
+### 06 | Teste de Integração
+#### Conteúdo
+
+[Apostila - Teste de Integração](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/06-teste-de-integracao/apostila_testes_de_integracao.pdf)
+
+**Pasta:** `06-teste-de-integracao`
