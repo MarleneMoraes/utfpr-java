@@ -57,3 +57,10 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Teste de Integração](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/06-teste-de-integracao/apostila_testes_de_integracao.pdf)
 
 **Pasta:** `06-teste-de-integracao`
+
+### 07 | Teste de Sistema (Parte 1)
+#### Conteúdo
+
+[Apostila - Teste de Sistema (Parte 1)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/07-teste-de-sistema01/apostila_teste_de_sistema.pdf)
+
+**Pasta:** `07-teste-de-sistema01`
