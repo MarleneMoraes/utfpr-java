@@ -58,3 +58,10 @@ Tutor: Esp. Everton Rodrigues
 - [Aula 07 - Microsserviços](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/07-microsservicos/microsservicos.pdf)
 
 **Pasta:** `07-microsservicos`
+
+### 08 | Segurança em REST
+#### Conteúdo
+- [Aula 08 - Segurança em REST](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/08-seguranca-em-rest/seguranca-em-rest.pdf)
+
+**Pasta:** `08-seguranca-em-rest`
+
