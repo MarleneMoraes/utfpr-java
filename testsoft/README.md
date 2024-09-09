@@ -64,3 +64,10 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Teste de Sistema (Parte 1)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/07-teste-de-sistema01/apostila_teste_de_sistema.pdf)
 
 **Pasta:** `07-teste-de-sistema01`
+
+### 08 | Teste de Sistema (Parte 2)
+#### Conteúdo
+
+[Apostila - Teste de Sistema (Parte 2)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/08-teste-de-sistema02/apostila_teste_de_sistema.pdf)
+
+**Pasta:** `08-teste-de-sistema02`
