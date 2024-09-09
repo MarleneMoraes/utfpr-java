@@ -71,3 +71,10 @@ Tutor: Esp. Adriano dos S. Dias
 [Apostila - Teste de Sistema (Parte 2)](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/08-teste-de-sistema02/apostila_teste_de_sistema.pdf)
 
 **Pasta:** `08-teste-de-sistema02`
+
+### 09 | Teste de Serviço Web
+#### Conteúdo
+
+[Apostila - Teste de Serviço Web](https://github.com/MarleneMoraes/utfpr-java/blob/main/testsoft/09-teste-de-servico-web/apostila_teste_de_servico_web.pdf)
+
+**Pasta:** `09-teste-de-servico-web`
