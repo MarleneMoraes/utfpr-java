@@ -52,3 +52,9 @@ Tutor: Esp. Everton Rodrigues
 - [SOAP UI](https://www.soapui.org/)
 
 **Pasta:** `06-rest`
+
+### 07 | Microsserviços
+#### Conteúdo
+- [Aula 07 - Microsserviços](https://github.com/MarleneMoraes/utfpr-java/blob/main/webservices/07-microsservicos/microsservicos.pdf)
+
+**Pasta:** `07-microsservicos`
