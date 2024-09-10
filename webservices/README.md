@@ -65,3 +65,6 @@ Tutor: Esp. Everton Rodrigues
 
 **Pasta:** `08-seguranca-em-rest`
 
+### Conteúdo Extra
+- [Tutorial - Construindo Web Services RESTful com Jakarta](https://eclipse-ee4j.github.io/jakartaee-tutorial/#building-restful-web-services-with-jakarta-rest)
+- [Tutorial - Como criar uma API REST com JakartaEE 9](https://blog.payara.fish/getting-started-with-jakarta-ee-9-how-to-create-a-rest-api-with-jakarta-ee-9)
