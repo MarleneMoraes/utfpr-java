@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CheckBox</string>
+    <string name="aluno">Aluno</string>
+    <string name="monitor">Monitor</string>
+    <string name="professor">Professor</string>
+    <string name="mostrar_selecionados">Mostrar Selecionados</string>
+    <string name="nenhuma_opcao_selecionada">Nenhuma opção selecionada</string>
+    <string name="desmarcar_todos">Desmarcar Todos</string>
+    <string name="foram_selecionados">Foram selecionados:</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nomes_paises">
+        <item>@string/angola</item>
+        <item>@string/brasil</item>
+        <item>@string/cabo_verde</item>
+        <item>@string/guine_bissau</item>
+        <item>@string/guine_equatorial</item>
+        <item>@string/macau</item>
+        <item>@string/mocambique</item>
+        <item>@string/portugal</item>
+        <item>@string/sao_tome_e_principe</item>
+        <item>@string/timor_leste</item>
+    </string-array>
+
+    <integer-array name="bandeiras_paises">
+        <item>@drawable/angola</item>
+        <item>@drawable/brasil</item>
+        <item>@drawable/cabo_verde</item>
+        <item>@drawable/guine_bissau</item>
+        <item>@drawable/guine_equatorial</item>
+        <item>@drawable/macau</item>
+        <item>@drawable/mocambique</item>
+        <item>@drawable/portugal</item>
+        <item>@drawable/sao_tome_e_principe</item>
+        <item>@drawable/timor_leste</item>
+    </integer-array>
+
+</resources>

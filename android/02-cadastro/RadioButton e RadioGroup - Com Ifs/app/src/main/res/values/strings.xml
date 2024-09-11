@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RadioButton</string>
+    <string name="java">Java</string>
+    <string name="pascal">Pascal</string>
+    <string name="cobol">Cobol</string>
+    <string name="mostrar_selecionados">Mostrar Selecionados</string>
+    <string name="foi_selecionado">" foi selecionado"</string>
+    <string name="ninguem_foi_selecionado">Ninguém foi selecionado!</string>
+    <string name="desmarcar">Desmarcar</string>
+</resources>

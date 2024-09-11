@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="marcas">
+        <item>@string/ford</item>
+        <item>@string/fiat</item>
+        <item>@string/honda</item>
+    </string-array>
+
+    <string-array name="modelos_ford">
+        <item>@string/fiesta</item>
+        <item>@string/focus</item>
+        <item>@string/fusion</item>
+    </string-array>
+
+    <string-array name="modelos_fiat">
+        <item>@string/palio</item>
+        <item>@string/argo</item>
+        <item>@string/uno</item>
+    </string-array>
+
+    <string-array name="modelos_honda">
+        <item>@string/civic</item>
+        <item>@string/city</item>
+        <item>@string/fit</item>
+    </string-array>
+
+</resources>

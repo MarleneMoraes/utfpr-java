@@ -14,3 +14,10 @@ Tutor: Me. Juliana Ferri
  - 03 | Executando um Aplicativo no Emulador Android
  - 04 | Executando um Aplicativo no Dispositivo
  - 05 | Estrutura de um projeto e mapeando componentes no código
+
+### Elementos de Cadastro
+ - 01 | Componentes TextView, EditText, Button e Toasts
+ - 02 | Componentes CheckBox e RadioButton
+ - 03 | Barras de Rolagem
+ - 04 | Componente Spinner
+ 

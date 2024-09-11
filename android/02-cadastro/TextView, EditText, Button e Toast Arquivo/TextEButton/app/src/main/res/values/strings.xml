@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TextEButton</string>
+    <string name="nome">Nome</string>
+    <string name="limpar">Limpar</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="nome_completo">Nome Completo</string>
+</resources>

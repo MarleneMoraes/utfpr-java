@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Spinner e String-array</string>
+    <string name="marcas">Marcas</string>
+    <string name="modelos">Modelos</string>
+
+    <string name="ford">Ford</string>
+    <string name="fiat">Fiat</string>
+    <string name="honda">Honda</string>
+
+    <string name="fiesta">Fiesta</string>
+    <string name="focus">Focus</string>
+    <string name="fusion">Fusion</string>
+
+    <string name="palio">Palio</string>
+    <string name="argo">Argo</string>
+    <string name="uno">Uno</string>
+
+    <string name="civic">Civic</string>
+    <string name="city">City</string>
+    <string name="fit">Fit</string>
+</resources>

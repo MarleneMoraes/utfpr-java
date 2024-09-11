@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="escolha_uma_linguagem">Escolha uma Linguagem</string>
+    <string name="mostrar_selecionado">Mostrar Selecionado</string>
+    <string name="java">Java</string>
+    <string name="cobol">Cobol</string>
+    <string name="pascal">Pascal</string>
+    <string name="foi_selecionado">" foi selecionado!"</string>
+    <string name="nenhuma_linguagem_selecionada">Nenhuma linguagem foi selecionada!</string>
+</resources>
