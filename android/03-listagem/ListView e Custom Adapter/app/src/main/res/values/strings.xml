@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ListView e Custom Adapter</string>
+    <string name="pessoa_nome">Pessoa de nome \"</string>
+    <string name="foi_clicada">\"\nfoi clicada!</string>
+    <string name="nome">Nome:</string>
+    <string name="renda_mensal">Renda Mensal:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="aluno">Aluno</string>
+    <string name="tutor">Tutor</string>
+    <string name="professor">Professor</string>
+    <string name="brasileiro">É Brasileiro</string>
+    <string name="estrangeiro">É Estrangeiro</string>
+
+    <string name="paulo">Paulo da Silva</string>
+    <string name="joao">João Henrique Souza</string>
+    <string name="maria">Maria dos Dias</string>
+    <string name="pedro">Pedro Silva Teixeira</string>
+    <string name="lucas">Lucas Agostino</string>
+    <string name="silvia">Silvia Maria Bragança</string>
+    <string name="marcos">Marcos Silveira</string>
+    <string name="joaquim">Joaquim da Silva Souza</string>
+    <string name="alexandre">Alexandre Marques</string>
+    <string name="theo">Theo Enzo Constantino</string>
+</resources>

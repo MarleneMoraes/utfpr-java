@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nomes">
+        <item>@string/paulo</item>
+        <item>@string/joao</item>
+        <item>@string/maria</item>
+        <item>@string/pedro</item>
+        <item>@string/lucas</item>
+        <item>@string/silvia</item>
+        <item>@string/marcos</item>
+        <item>@string/joaquim</item>
+        <item>@string/alexandre</item>
+        <item>@string/theo</item>
+    </string-array>
+
+    <string-array name="rendas_mensais">
+        <item>500</item>
+        <item>1500.78</item>
+        <item>12500</item>
+        <item>750.78</item>
+        <item>10800.50</item>
+        <item>1327</item>
+        <item>5200</item>
+        <item>7500</item>
+        <item>8525.75</item>
+        <item>6598</item>
+    </string-array>
+
+    <!-- O valor inteiro indica a posição (ordinal) da constante Tipo
+         correspondente na lista declarada no Enum, ou seja:
+         - 0 representa a primeira posição;
+         - 1 a segunda;
+         - 2 a terceira; e assim por diante. -->
+    <integer-array name="tipos_posicao">
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- 1 representa o valor lógico "true" e 0 o valor "false" -->
+    <integer-array name="brasileiros">
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    
+</resources>

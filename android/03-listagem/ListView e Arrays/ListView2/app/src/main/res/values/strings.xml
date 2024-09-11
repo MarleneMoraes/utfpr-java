@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">ListView e Arrays</string>
+
+    <string name="joao">João</string>
+    <string name="maria">Maria</string>
+    <string name="pedro">Pedro</string>
+
+</resources>

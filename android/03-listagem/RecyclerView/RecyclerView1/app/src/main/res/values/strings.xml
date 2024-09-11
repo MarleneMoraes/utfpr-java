@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecyclerView e Arrays</string>
+    <string name="recebeu_click">"\nRecebeu um click!"</string>
+    <string name="recebeu_click_longo">"\nRecebeu um click longo!"</string>
+
+    <string name="joao">João da Silva</string>
+    <string name="maria">Maria Souza</string>
+    <string name="pedro">Pedro Casagrande</string>
+
+</resources>

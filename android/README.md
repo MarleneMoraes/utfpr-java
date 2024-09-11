@@ -20,4 +20,7 @@ Tutor: Me. Juliana Ferri
  - 02 | Componentes CheckBox e RadioButton
  - 03 | Barras de Rolagem
  - 04 | Componente Spinner
- 
+
+### Elementos de Listagem
+ - 01 | Componente ListView
+ - 02 | Componente RecyclerView
