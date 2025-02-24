@@ -31,3 +31,7 @@ Tutor: Me. Juliana Ferri
 - 01 | Menus de Opções e de Contexto
 - 02 | Menu de Ação Contextual
 - 03 | Barra do Aplicativo - Botões Up
+
+### Internacionalização e Personalização
+- 01 | Preferências Compartilhadas
+- 02 | Internacionalização

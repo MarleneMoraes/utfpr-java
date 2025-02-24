@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enviar">ارسال</string>
+    <string name="limpar">روشن است</string>
+    <string name="nome">نام</string>
+    <string name="sobrenome">نام خانوادگی</string>
+    <string name="novo_cadastro">ثبت نام جدید</string>
+    <string name="app_name">بین المللی شدن</string>
+    <string name="frase">سلام، به عنوان مثال بین المللی خوش آمدید!</string>
+    <string name="frase_enviar">%2$s %1$s نام کامل</string>
+</resources>

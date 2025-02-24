@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/salvar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_action_clear"
+        android:title="@string/limpar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemSugerirTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:title="@string/sugerir_tipo" />
+</menu>

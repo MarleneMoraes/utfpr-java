@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internacionalização</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="enviar">Enviar</string>
+    <string name="limpar">Limpar</string>
+    <string name="novo_cadastro">Novo Cadastro</string>
+    <string name="frase">Olá, bem vindo ao exemplo de internacionalização!</string>
+    <string name="frase_enviar">Nome Completo: %1$s %2$s</string>
+</resources>

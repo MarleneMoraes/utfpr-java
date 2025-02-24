@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Internationalization</string>
+    <string name="enviar">Send</string>
+    <!-- Limpa os campos do formulário -->
+    <string name="limpar">Clear</string>
+    <!-- Nome de uma Pessoa -->
+    <string name="nome">Name</string>
+    <string name="sobrenome">Last Name</string>
+    <!-- Novo cadastro do banco de dados do sistema -->
+    <string name="novo_cadastro">New Register</string>
+    <string name="frase">Hello, welcome to the internationalization example!</string>
+    <string name="utfpr" translatable="false">UTFPR</string>
+    <!-- %1$s e %2$s são varivéis de entrada e não devem ser traduzidas -->
+    <string name="frase_enviar">Full name: %1$s %2$s</string>
+
+
+    %2$s %1$s
+</resources>

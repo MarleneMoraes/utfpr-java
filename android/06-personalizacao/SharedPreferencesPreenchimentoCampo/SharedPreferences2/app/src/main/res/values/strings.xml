@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SharedPreferences2</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="sobre">Sobre</string>
+    <string name="exemplo_transicao_activities">Exemplo de Transição entre Activities</string>
+    <string name="autor">Autor: Prof. Alexandre R. M. Feitosa</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome">Nome</string>
+    <string name="nome_n_o_pode_ser_vazio">Nome não pode ser vazio!</string>
+    <string name="controle_de_pessoas">Controle de Pessoas</string>
+    <string name="as_entradas_foram_apagadas">As entradas foram apagadas!</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="nova_pessoa">Nova Pessoa</string>
+    <string name="editar_pessoa">Editar Pessoa</string>
+
+    <string name="aluno">Aluno</string>
+    <string name="tutor">Tutor</string>
+    <string name="professor">Professor</string>
+    <string name="tipo">Tipo</string>
+    <string name="tipo_n_o_pode_ser_vazio">Tipo não pode ser vazio!</string>
+    <string name="sugerir_tipo">Sugerir Tipo</string>
+
+</resources>
