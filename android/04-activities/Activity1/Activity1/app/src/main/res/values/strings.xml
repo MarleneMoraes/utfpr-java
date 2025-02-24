@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Activity 1</string>
+    <string name="enviar">Enviar</string>
+    <string name="voltar">Voltar</string>
+    <string name="dados_recebidos">Dados Recebidos</string>
+    <string name="entre_com_texto">Entre com o Texto</string>
+    <string name="parametros_passados">Parâmetro Passado</string>
+    <string name="title_activity_mostrar_dados">MostrarDadosActivity</string>
+</resources>

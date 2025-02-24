@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Activity Implícita</string>
+    <string name="site_utfpr">www.utfpr.edu.br</string>
+    <string name="nenhum_aplicativo_atende">Nenhum aplicativo instalado pode atender a ação!</string>
+</resources>

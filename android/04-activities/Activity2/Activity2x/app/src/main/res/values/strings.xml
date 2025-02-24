@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activity2x</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="sobre">Sobre</string>
+    <string name="exemplo_transicao_activities">Exemplo de Transição entre Activities</string>
+    <string name="autor">Autor: Prof. Alexandre R. M. Feitosa</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome">Nome</string>
+    <string name="nome_n_o_pode_ser_vazio">Nome não pode ser vazio!</string>
+</resources>
