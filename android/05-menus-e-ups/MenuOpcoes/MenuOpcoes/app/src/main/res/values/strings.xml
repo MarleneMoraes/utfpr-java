@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Menu de Opções</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="foi_clicado">" foi clicado!"</string>
+    <string name="usar_dados">Usar Dados</string>
+    <string name="azul">Azul</string>
+    <string name="vermelho">Vermelho</string>
+    <string name="submenu">Submenu</string>
+    <string name="opcao1">Opção 1</string>
+    <string name="opcao2">Opção 2</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Menu de Contexto Flutuante</string>
+    <string name="alterar">Alterar</string>
+    <string name="excluir">Excluir</string>
+</resources>

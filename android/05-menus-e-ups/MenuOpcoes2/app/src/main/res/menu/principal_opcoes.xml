@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemSalvar"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/salvar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemExcluir"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/excluir"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemUsarDados"
+        android:checkable="true"
+        android:onClick="usarDados"
+        android:title="@string/usar_dados" />
+    <group
+        android:id="@+id/groupCores"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuItemAzul"
+            android:title="@string/azul" />
+        <item
+            android:id="@+id/menuItemVermelho"
+            android:title="@string/vermelho" />
+    </group>
+    <item
+        android:id="@+id/menuItemSubmenu"
+        android:title="@string/submenu" >
+        <menu >
+            <item
+                android:id="@+id/menuItemOpcao1"
+                android:title="@string/opcao1" />
+            <item
+                android:id="@+id/menuItemOpcao2"
+                android:title="@string/opcao2" />
+        </menu>
+    </item>
+
+</menu>

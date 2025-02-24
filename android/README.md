@@ -24,3 +24,10 @@ Tutor: Me. Juliana Ferri
 ### Elementos de Listagem
  - 01 | Componente ListView
  - 02 | Componente RecyclerView
+
+### Chamada de Activities
+
+### Menus e Ups
+- 01 | Menus de Opções e de Contexto
+- 02 | Menu de Ação Contextual
+- 03 | Barra do Aplicativo - Botões Up
