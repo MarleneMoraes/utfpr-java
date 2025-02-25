@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipos_iniciais">
+        <item>@string/aluno</item>
+        <item>@string/monitor</item>
+        <item>@string/professor</item>
+    </string-array>
+</resources>

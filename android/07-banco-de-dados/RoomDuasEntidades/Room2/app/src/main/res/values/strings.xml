@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Room 2</string>
+    <string name="novo">Novo</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nova_pessoa">Nova Pessoa</string>
+    <string name="alterar_pessoa">Alterar Pessoa</string>
+    <string name="abrir">Abrir</string>
+    <string name="apagar">Apagar</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="deseja_realmente_apagar">Deseja realmente apagar?</string>
+    <string name="aviso">Aviso</string>
+    <string name="ok">OK</string>
+    <string name="nome_vazio">O nome está vazio!</string>
+    <string name="idade_vazia">A idade está vazia!</string>
+    <string name="idade_invalida">A idade deve ser entre 1 e 200!</string>
+    <string name="descricao">Descrição</string>
+    <string name="novo_tipo">Novo Tipo</string>
+    <string name="alterar_tipo">Alterar Tipo</string>
+    <string name="descricao_vazia">A descrição está vazia!</string>
+    <string name="tipo">Tipo</string>
+    <string name="tipos">Tipos</string>
+    <string name="tipo_usado">O tipo esta sendo usado e não pode ser apagado!</string>
+    <string name="descricao_usada">Esta descrição já foi usada em outro tipo!</string>
+    <string name="nenhum_tipo">Não existe nenhum tipo criado!</string>
+
+    <string name="aluno">Aluno</string>
+    <string name="monitor">Monitor</string>
+    <string name="professor">Professor</string>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name" translatable="false">Room 3</string>
+    <string name="novo">New</string>
+    <string name="nome">Name</string>
+    <string name="idade">Age</string>
+    <string name="salvar">Save</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nova_pessoa">New Person</string>
+    <string name="alterar_pessoa">Edit Person</string>
+    <string name="abrir">Open</string>
+    <string name="apagar">Delete</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="confirmacao">Confirmation</string>
+    <string name="deseja_realmente_apagar">You really want to delete?</string>
+    <string name="aviso">Alert</string>
+    <string name="ok">OK</string>
+    <string name="nome_vazio">The name is empty!</string>
+    <string name="data_nascimento_vazia">Birthdate is empty!</string>
+    <string name="idade_invalida">Invalid Birth Date!</string>
+    <string name="descricao">Description</string>
+    <string name="novo_tipo">New Type</string>
+    <string name="alterar_tipo">Edit Type</string>
+    <string name="descricao_vazia">The description is empty!</string>
+    <string name="tipo">Type</string>
+    <string name="tipos">Types</string>
+    <string name="tipo_usado">The Type is being used and can not be deleted!</string>
+    <string name="descricao_usada">This description has already been used in another Type!</string>
+    <string name="novo_tipo_contato">New Contact Type</string>
+    <string name="alterar_tipo_contato">Edit Contact Type</string>
+    <string name="tipos_contato">Types of Contact</string>
+    <string name="novo_contato">New Contact</string>
+    <string name="alterar_contato">Edit Contact</string>
+    <string name="valor_vazio">Value is empty!</string>
+    <string name="tipo_contato_vazio">Contact Type is empty!</string>
+    <string name="nenhum_tipo">There is no created Type!</string>
+    <string name="nenhum_tipo_contato">There is no Contact Type created!</string>
+    <string name="contato_valor_repetido">A contact of the same type and value already exists!</string>
+
+    <string name="aluno">Student</string>
+    <string name="monitor">Monitor</string>
+    <string name="professor">Teacher</string>
+
+    <string name="telefone">Telephone</string>
+    <string name="email">e-mail</string>
+    <string name="contatos">Contacts</string>
+    <string name="valor">Value</string>
+    <string name="tipo_contato">Contact Type</string>
+    <string name="data_cadastro">Register Date</string>
+    <string name="data_nascimento">Birthdate</string>
+
+    <plurals name="idade">
+        <item quantity="one">%d year.</item>
+        <item quantity="other">%d years.</item>
+    </plurals>
+</resources>

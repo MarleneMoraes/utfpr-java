@@ -1,0 +1,238 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1321da6e02c0893ae5d15166057a9019",
+    "entities": [
+      {
+        "tableName": "tipos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `descricao` TEXT NOT NULL, `dataCadastro` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descricao",
+            "columnName": "descricao",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataCadastro",
+            "columnName": "dataCadastro",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_tipos_descricao",
+            "unique": true,
+            "columnNames": [
+              "descricao"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_tipos_descricao` ON `${TABLE_NAME}` (`descricao`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tipos_contato",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `descricao` TEXT NOT NULL, `dataCadastro` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descricao",
+            "columnName": "descricao",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataCadastro",
+            "columnName": "dataCadastro",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_tipos_contato_descricao",
+            "unique": true,
+            "columnNames": [
+              "descricao"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_tipos_contato_descricao` ON `${TABLE_NAME}` (`descricao`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "pessoas",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `dataNascimento` INTEGER, `dataCadastro` INTEGER, `tipoId` INTEGER NOT NULL, FOREIGN KEY(`tipoId`) REFERENCES `tipos`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataNascimento",
+            "columnName": "dataNascimento",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dataCadastro",
+            "columnName": "dataCadastro",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tipoId",
+            "columnName": "tipoId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_pessoas_tipoId",
+            "unique": false,
+            "columnNames": [
+              "tipoId"
+            ],
+            "createSql": "CREATE  INDEX `index_pessoas_tipoId` ON `${TABLE_NAME}` (`tipoId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "tipos",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "tipoId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "contatos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `valor` TEXT NOT NULL, `pessoaId` INTEGER NOT NULL, `tipoContatoId` INTEGER NOT NULL, FOREIGN KEY(`tipoContatoId`) REFERENCES `tipos_contato`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`pessoaId`) REFERENCES `pessoas`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "valor",
+            "columnName": "valor",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pessoaId",
+            "columnName": "pessoaId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipoContatoId",
+            "columnName": "tipoContatoId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_contatos_pessoaId",
+            "unique": false,
+            "columnNames": [
+              "pessoaId"
+            ],
+            "createSql": "CREATE  INDEX `index_contatos_pessoaId` ON `${TABLE_NAME}` (`pessoaId`)"
+          },
+          {
+            "name": "index_contatos_tipoContatoId",
+            "unique": false,
+            "columnNames": [
+              "tipoContatoId"
+            ],
+            "createSql": "CREATE  INDEX `index_contatos_tipoContatoId` ON `${TABLE_NAME}` (`tipoContatoId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "tipos_contato",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "tipoContatoId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "pessoas",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "pessoaId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"1321da6e02c0893ae5d15166057a9019\")"
+    ]
+  }
+}

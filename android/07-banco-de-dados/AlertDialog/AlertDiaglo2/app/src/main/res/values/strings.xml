@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">People Control</string>
+    <string name="adicionar">Add</string>
+    <string name="sobre">About</string>
+    <string name="exemplo_transicao_activities">Example of Transition between Activities</string>
+    <string name="autor">Author: Prof. Alexandre R. M. Feitosa</string>
+    <string name="salvar">Save</string>
+    <string name="limpar">Clean</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nome">Name:</string>
+    <string name="nome_n_o_pode_ser_vazio">Name cannot be empty!</string>
+    <string name="as_entradas_foram_apagadas">The entries have been deleted!</string>
+    <string name="editar">Edit</string>
+    <string name="excluir">Delete</string>
+    <string name="nova_pessoa">New Person</string>
+    <string name="editar_pessoa">Edit Person</string>
+
+    <string name="aluno">Student</string>
+    <string name="monitor">Class Monitor</string>
+    <string name="tutor">Tutor</string>
+    <string name="professor">Teacher</string>
+    <string name="coordenador">Coordinator</string>
+
+    <string name="tipo">Type:</string>
+    <string name="tipo_n_o_pode_ser_vazio">Type cannot be empty!</string>
+    <string name="sugerir_tipo">Suggest Type</string>
+    <string name="ordenacao">Ordering</string>
+    <string name="possui_bolsa">Has Scholarship</string>
+    <string name="mao_usada">Hand Used:</string>
+    <string name="direita">Right</string>
+    <string name="esquerda">Left</string>
+    <string name="ambas">Both</string>
+    <string name="a_mao_usada_nao_pode_ser_vazia">The hand used cannot be empty!</string>
+    <string name="nao_possui_bolsa">No Scholarship</string>
+    <string name="aviso">Warning</string>
+    <string name="ok">OK</string>
+    <string name="confirmacao">Confirmation</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="deseja_realmente_apagar">Do you really want to delete?</string>
+
+</resources>

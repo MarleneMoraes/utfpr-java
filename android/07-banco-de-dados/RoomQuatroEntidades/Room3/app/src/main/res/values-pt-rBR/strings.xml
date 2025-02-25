@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="novo">Novo</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nova_pessoa">Nova Pessoa</string>
+    <string name="alterar_pessoa">Alterar Pessoa</string>
+    <string name="abrir">Abrir</string>
+    <string name="apagar">Apagar</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="deseja_realmente_apagar">Deseja realmente apagar?</string>
+    <string name="aviso">Aviso</string>
+    <string name="ok">OK</string>
+    <string name="nome_vazio">O nome está vazio!</string>
+    <string name="data_nascimento_vazia">A Data de Nascimento está vazia!</string>
+    <string name="idade_invalida">Data de Nascimento inválida!</string>
+    <string name="descricao">Descrição</string>
+    <string name="novo_tipo">Novo Tipo</string>
+    <string name="alterar_tipo">Alterar Tipo</string>
+    <string name="descricao_vazia">A descrição está vazia!</string>
+    <string name="tipo">Tipo</string>
+    <string name="tipos">Tipos</string>
+    <string name="tipo_usado">O tipo esta sendo usado e não pode ser apagado!</string>
+    <string name="descricao_usada">Esta descrição já foi usada em outro tipo!</string>
+    <string name="novo_tipo_contato">Novo Tipo Contato</string>
+    <string name="alterar_tipo_contato">Alterar Tipo Contato</string>
+    <string name="tipos_contato">Tipos de Contato</string>
+    <string name="novo_contato">Novo Contato</string>
+    <string name="alterar_contato">Alterar Contato</string>
+    <string name="valor_vazio">O valor está vazio!</string>
+    <string name="tipo_contato_vazio">O Tipo do Contato está vazio!</string>
+    <string name="nenhum_tipo">Não existe nenhum tipo criado!</string>
+    <string name="nenhum_tipo_contato">Não existe nenhum tipo de contato criado!</string>
+    <string name="contato_valor_repetido">Já existe um contato do mesmo tipo e valor!</string>
+
+    <string name="aluno">Aluno</string>
+    <string name="monitor">Monitor</string>
+    <string name="professor">Professor</string>
+
+    <string name="telefone">Telefone</string>
+    <string name="email">e-mail</string>
+    <string name="contatos">Contatos</string>
+    <string name="valor">Valor</string>
+    <string name="tipo_contato">Tipo Contato</string>
+    <string name="data_cadastro">Data Cadastro</string>
+    <string name="data_nascimento">Data Nascimento</string>
+
+    <plurals name="idade">
+        <item quantity="one">%d ano.</item>
+        <item quantity="other">%d anos.</item>
+    </plurals>
+</resources>

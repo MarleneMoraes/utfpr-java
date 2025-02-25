@@ -35,3 +35,10 @@ Tutor: Me. Juliana Ferri
 ### Internacionalização e Personalização
 - 01 | Preferências Compartilhadas
 - 02 | Internacionalização
+
+### Persistência no Banco de Dados
+- 01 | SQLite
+- 02 | Exibição de Mensagens e Caixas de Diálogo
+- 03 | Room Persistence Library
+- 04 | Datas
+- 05 | Seletores

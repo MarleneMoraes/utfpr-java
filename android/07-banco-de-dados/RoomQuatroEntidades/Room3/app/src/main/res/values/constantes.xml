@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="altura_min_lista_contatos">96</integer>
+    <integer name="anos_para_tras">20</integer>
+</resources>
