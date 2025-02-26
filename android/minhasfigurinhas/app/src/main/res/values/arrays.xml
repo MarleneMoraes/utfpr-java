@@ -60,19 +60,19 @@
         <item>1</item>
     </integer-array>
 
-    <integer-array name="categoria">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-    </integer-array>
+    <string-array name="categoria">
+        <item>Esportes</item>
+        <item>Filmes</item>
+        <item>Séries de TV</item>
+        <item>Celebridades</item>
+        <item>Desenhos Animados</item>
+        <item>Animes e Mangás</item>
+        <item>História e Cultura</item>
+        <item>Natureza e Ciências</item>
+        <item>Espaço e Astronomia</item>
+        <item>Temáticos</item>
+        <item>Edições Comemorativas</item>
+        <item>Jogos</item>
+    </string-array>
 
 </resources>

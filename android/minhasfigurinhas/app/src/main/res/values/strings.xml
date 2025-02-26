@@ -10,4 +10,15 @@
     <string name="album_registry">Cadastro de Álbum</string>
     <string name="salvar">Salvar</string>
     <string name="limpar">Limpar</string>
+    <string name="logo_utfpr">Logo da UTFPR</string>
+    <string name="Descricao">Curso: XXX Tecnologia Java</string>
+    <string name="Autoria">Autora: Marlene Moraes</string>
+    <string name="Email">E-mail: marlenevmoraes@outlook.com</string>
+    <string name="DescricaoDoApp">Descrição: Minhas Figurinhas é um aplicativo desenvolvido para facilitar o controle das suas coleções de álbuns de figurinhas, ao gerenciar suas figurinhas, manter o registro das figurinhas que faltam e das que possui, e criar listas de trocas para compartilhar com amigos e outros colecionadores.</string>
+    <string name="Sobre">Sobre</string>
+    <string name="lista_de_lbuns">Lista de Álbuns</string>
+    <string name="sobre">Sobre</string>
+    <string name="Adicionar">Adicionar Álbum</string>
+    <string name="novo_lbum">Novo Álbum</string>
+
 </resources>

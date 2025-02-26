@@ -12,5 +12,7 @@ public enum CategoriaAlbum {
     ESPACO_ASTRONOMIA,
     TEMATICOS,
     EDICOES_COMEMORATIVAS,
-    JOGOS;
+    JOGOS,
+
+    NENHUM
 }

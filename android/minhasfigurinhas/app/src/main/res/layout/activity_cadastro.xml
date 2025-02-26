@@ -5,21 +5,63 @@
     android:id="@+id/listViewAlbuns"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CadastroActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="366dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/linearLayoutRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTitle">
+
+        <TextView
+            android:id="@+id/labelCountry"
+            android:layout_width="45dp"
+            android:layout_height="24dp"
+            android:text="@string/country" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonBR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brasil" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outros" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutQtdStickers"
+        android:layout_width="378dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCategory">
 
         <TextView
             android:id="@+id/labelQtdSticker"
@@ -52,16 +94,18 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayoutCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
         android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutQtdStickers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupCountry">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutRadio">
 
         <TextView
             android:id="@+id/labelCategory"
@@ -88,31 +132,38 @@
             app:layout_constraintVertical_bias="0.021" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/labelCountry"
-        android:layout_width="45dp"
-        android:layout_height="24dp"
-        android:text="@string/country"
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editAlbumTitle"
-        app:layout_constraintVertical_bias="0.026" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutQtdStickers"
+        app:layout_constraintVertical_bias="0.247">
 
-    <EditText
-        android:id="@+id/editAlbumTitle"
-        android:layout_width="340dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/album_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title2"
-        app:layout_constraintVertical_bias="0.026" />
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="@string/salvar" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/limpar" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/title2"
@@ -129,57 +180,33 @@
         app:layout_constraintVertical_bias="0.062"
         tools:ignore="MissingConstraints" />
 
-    <RadioGroup
-        android:id="@+id/radioGroupCountry"
-        android:layout_width="340dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="36dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/labelCategory"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editAlbumTitle"
-        app:layout_constraintVertical_bias="0.166">
-
-        <RadioButton
-            android:id="@+id/radioButtonBR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/brasil" />
-
-        <RadioButton
-            android:id="@+id/radioButtonOT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/outros" />
-    </RadioGroup>
-
     <LinearLayout
+        android:id="@+id/linearLayoutTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.186"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2">
 
-        <Button
-            android:id="@+id/buttonSave"
+        <TextView
+            android:id="@+id/labelTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/salvar"
-            android:backgroundTint="@color/green" />
+            android:layout_marginBottom="8dp"
+            android:text="@string/album_title" />
 
-        <Button
-            android:id="@+id/buttonClear"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/limpar"
-            android:backgroundTint="@color/red" />
+            android:inputType="text" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

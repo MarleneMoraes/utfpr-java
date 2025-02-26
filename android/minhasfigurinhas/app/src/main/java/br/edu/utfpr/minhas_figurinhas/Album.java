@@ -1,5 +1,7 @@
 package br.edu.utfpr.minhas_figurinhas;
 
+import androidx.annotation.NonNull;
+
 public class Album {
     private String titulo;
     private int qtdFigurinhas;
@@ -35,6 +37,7 @@ public class Album {
         return categoria;
     }
 
+    @NonNull
     @Override
     public String toString() {
         String  brilhante = isBrilhante() ? "Sim" : "Não";

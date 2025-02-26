@@ -6,35 +6,27 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_utfpr"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_utfpr_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Minhasfigurinhas"
+        android:theme="@style/Theme.ThemesStylesIcons"
         tools:targetApi="31">
-
-        <!-- Activity Principal -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            android:name=".SobreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="false">
         </activity>
-
         <activity
             android:name=".AlbumActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ListViewAlbuns"
-            android:exported="true">
         </activity>
     </application>
 
