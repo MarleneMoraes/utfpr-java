@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titulo">
+        <item>Campeonato Brasileiro 2025</item>
+        <item>O Mágico de Oz</item>
+        <item>Hannah Montana</item>
+        <item>Hillary Duff</item>
+        <item>Phineas e Ferb</item>
+        <item>Death Note</item>
+        <item>História do Brasil: 1808</item>
+        <item>Insetos</item>
+        <item>Sistema Solar</item>
+        <item>Natal 2025</item>
+        <item>100 anos Walt Disney</item>
+        <item>Detroit: Become Human</item>
+    </string-array>
+
+    <integer-array name="qtd_figurinhas">
+        <item>546</item>
+        <item>80</item>
+        <item>200</item>
+        <item>250</item>
+        <item>150</item>
+        <item>180</item>
+        <item>220</item>
+        <item>120</item>
+        <item>160</item>
+        <item>100</item>
+        <item>280</item>
+        <item>125</item>
+    </integer-array>
+
+    <string-array name="pais">
+        <item>Brasil</item>
+        <item>Estados Unidos</item>
+        <item>Estados Unidos</item>
+        <item>Estados Unidos</item>
+        <item>Estados Unidos</item>
+        <item>Japão</item>
+        <item>Brasil</item>
+        <item>Índia</item>
+        <item>China</item>
+        <item>Estados Unidos</item>
+        <item>Estados Unidos</item>
+        <item>Estados Unidos</item>
+    </string-array>
+
+    <integer-array name="brilhantes">
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <integer-array name="categoria">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </integer-array>
+
+</resources>

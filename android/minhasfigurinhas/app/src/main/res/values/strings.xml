@@ -10,12 +10,4 @@
     <string name="album_registry">Cadastro de Álbum</string>
     <string name="salvar">Salvar</string>
     <string name="limpar">Limpar</string>
-    <string-array name="spinnerOptions">
-        <item>Futebol</item>
-        <item>Filmes</item>
-        <item>Desenhos Animados</item>
-        <item>Super-Heróis</item>
-        <item>Esportes</item>
-        <item>Outros</item>
-    </string-array>
 </resources>

@@ -42,6 +42,3 @@ Tutor: Me. Juliana Ferri
 - 03 | Room Persistence Library
 - 04 | Datas
 - 05 | Seletores
-
-### Projeto Final 
-- Projeto Minhas Figurinhas: `minhasfigurinhas`

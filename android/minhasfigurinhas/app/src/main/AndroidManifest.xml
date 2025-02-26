@@ -12,14 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Minhasfigurinhas"
         tools:targetApi="31">
+
+        <!-- Activity Principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+
+        <activity
+            android:name=".AlbumActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ListViewAlbuns"
+            android:exported="true">
         </activity>
     </application>
 
