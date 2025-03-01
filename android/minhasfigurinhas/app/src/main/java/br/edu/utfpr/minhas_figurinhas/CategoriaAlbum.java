@@ -1,18 +1,17 @@
 package br.edu.utfpr.minhas_figurinhas;
 
 public enum CategoriaAlbum {
-    ESPORTES,
-    FILMES,
-    SERIES_TV,
-    CELEBRIDADES,
-    DESENHOS_ANIMADOS,
-    ANIMES_MANGAS,
-    HISTORIA_CULTURA,
-    NATUREZA_CIENCIAS,
-    ESPACO_ASTRONOMIA,
-    TEMATICOS,
-    EDICOES_COMEMORATIVAS,
-    JOGOS,
-
-    NENHUM
+    Esportes,
+    Filmes,
+    Series_de_TV,
+    Celebridades,
+    Desenhos_Animados,
+    Animes_Mangas,
+    Historia_Cultura,
+    Natureza_Ciencias,
+    Espaco_Astronomia,
+    Tematicos,
+    Edicoes_Comemorativas,
+    Jogos,
+    Nenhum
 }

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Minhas Figurinhas</string>
+
+    <string name="album_registry">Cadastro de Álbum</string>
     <string name="quantidade_de_figurinhas">Quantidade de Figurinhas</string>
     <string name="brilhantes">Brilhantes?</string>
     <string name="categoria">Categoria</string>
@@ -7,18 +9,40 @@
     <string name="country">País</string>
     <string name="brasil">Brasil</string>
     <string name="album_title">Título do Álbum</string>
-    <string name="album_registry">Cadastro de Álbum</string>
     <string name="salvar">Salvar</string>
     <string name="limpar">Limpar</string>
-    <string name="logo_utfpr">Logo da UTFPR</string>
-    <string name="Descricao">Curso: XXX Tecnologia Java</string>
-    <string name="Autoria">Autora: Marlene Moraes</string>
-    <string name="Email">E-mail: marlenevmoraes@outlook.com</string>
-    <string name="DescricaoDoApp">Descrição: Minhas Figurinhas é um aplicativo desenvolvido para facilitar o controle das suas coleções de álbuns de figurinhas, ao gerenciar suas figurinhas, manter o registro das figurinhas que faltam e das que possui, e criar listas de trocas para compartilhar com amigos e outros colecionadores.</string>
-    <string name="Sobre">Sobre</string>
-    <string name="lista_de_lbuns">Lista de Álbuns</string>
-    <string name="sobre">Sobre</string>
-    <string name="Adicionar">Adicionar Álbum</string>
-    <string name="novo_lbum">Novo Álbum</string>
 
+    <string name="sobre">Sobre</string>
+    <string name="logo_utfpr">Logo da UTFPR</string>
+    <string name="descricao">Curso: XXX Tecnologia Java</string>
+    <string name="autoria">Autora: Marlene Moraes</string>
+    <string name="email">E-mail: marlenevmoraes@outlook.com</string>
+    <string name="descricaoDoApp">Descrição: Minhas Figurinhas é um aplicativo desenvolvido para facilitar o controle das suas coleções de álbuns de figurinhas, ao gerenciar suas figurinhas, manter o registro das figurinhas que faltam e das que possui, e criar listas de trocas para compartilhar com amigos e outros colecionadores.</string>
+    <string name="siteAuthor">http://lattes.cnpq.br/1660635383528761</string>
+    <string name="noAppToOpen">Nenhum aplicativo para abrir páginas web</string>
+    <string name="appContact">Contato pelo App</string>
+    <string name="noAppToSend">Nenhum aplicativo para enviar o e-mail</string>
+
+    <string name="lista_de_lbuns">Lista de Álbuns</string>
+    <string name="adicionar">Adicionar Álbum</string>
+    <string name="novo_album">Novo Álbum</string>
+
+    <string name="tem_brilhantes">Sim</string>
+    <string name="nao_brilhantes">Não</string>
+    <string name="esportes">Esportes</string>
+    <string name="filmes">Filmes</string>
+    <string name="series_tv">Séries de tv</string>
+    <string name="celebridades">Celebridades</string>
+    <string name="desenhos_animados">Desenhos animados</string>
+    <string name="animes_mangas">Animes e Mangás</string>
+    <string name="historia_cultura">História e Cultura</string>
+    <string name="natureza_ciencias">Natureza e Ciências</string>
+    <string name="espaco_astronomia">Espaço e Astronomia</string>
+    <string name="tematicos">Temáticos</string>
+    <string name="edicoes_comemorativas">Edições Comemorativas</string>
+    <string name="jogos">Jogos</string>
+    <string name="nenhum">Nenhum</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="qtdStickersInteiro">Quantidade de figurinhas deve ser número inteiro</string>
 </resources>
