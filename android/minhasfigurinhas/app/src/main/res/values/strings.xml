@@ -1,48 +1,64 @@
 <resources>
-    <string name="app_name">Minhas Figurinhas</string>
+    <string name="app_name">My Stickers</string>
 
-    <string name="album_registry">Cadastro de Álbum</string>
-    <string name="quantidade_de_figurinhas">Quantidade de Figurinhas</string>
-    <string name="brilhantes">Brilhantes?</string>
-    <string name="categoria">Categoria</string>
-    <string name="outros">Outros</string>
-    <string name="country">País</string>
-    <string name="brasil">Brasil</string>
-    <string name="album_title">Título do Álbum</string>
-    <string name="salvar">Salvar</string>
-    <string name="limpar">Limpar</string>
+    <string name="album_registration">Album Registration</string>
+    <string name="sticker_quantity">Sticker Quantity</string>
+    <string name="shiny">Shiny?</string>
+    <string name="category">Category</string>
+    <string name="country">Country</string>
+    <string name="brazil">Brazil</string>
+    <string name="others">Others</string>
+    <string name="album_title">Album Title</string>
 
-    <string name="sobre">Sobre</string>
-    <string name="logo_utfpr">Logo da UTFPR</string>
-    <string name="descricao">Curso: XXX Tecnologia Java</string>
-    <string name="autoria">Autora: Marlene Moraes</string>
-    <string name="email">E-mail: marlenevmoraes@outlook.com</string>
-    <string name="descricaoDoApp">Descrição: Minhas Figurinhas é um aplicativo desenvolvido para facilitar o controle das suas coleções de álbuns de figurinhas, ao gerenciar suas figurinhas, manter o registro das figurinhas que faltam e das que possui, e criar listas de trocas para compartilhar com amigos e outros colecionadores.</string>
-    <string name="siteAuthor">http://lattes.cnpq.br/1660635383528761</string>
-    <string name="noAppToOpen">Nenhum aplicativo para abrir páginas web</string>
-    <string name="appContact">Contato pelo App</string>
-    <string name="noAppToSend">Nenhum aplicativo para enviar o e-mail</string>
+    <string name="save">Save</string>
+    <string name="title_required">The album title is required.</string>
+    <string name="qtd_sticker_required">The sticker quantity is required.</string>
+    <string name="country_required">Please select a country option.</string>
+    <string name="category_required">Please select a category.</string>
+    <string name="qtd_sticker_limit">The sticker quantity must be between 0 and 1000.</string>
 
-    <string name="lista_de_lbuns">Lista de Álbuns</string>
-    <string name="adicionar">Adicionar Álbum</string>
-    <string name="novo_album">Novo Álbum</string>
+    <string name="data_saved_successfully">Data saved successfully!</string>
 
-    <string name="tem_brilhantes">Sim</string>
-    <string name="nao_brilhantes">Não</string>
-    <string name="esportes">Esportes</string>
-    <string name="filmes">Filmes</string>
-    <string name="series_tv">Séries de tv</string>
-    <string name="celebridades">Celebridades</string>
-    <string name="desenhos_animados">Desenhos animados</string>
-    <string name="animes_mangas">Animes e Mangás</string>
-    <string name="historia_cultura">História e Cultura</string>
-    <string name="natureza_ciencias">Natureza e Ciências</string>
-    <string name="espaco_astronomia">Espaço e Astronomia</string>
-    <string name="tematicos">Temáticos</string>
-    <string name="edicoes_comemorativas">Edições Comemorativas</string>
-    <string name="jogos">Jogos</string>
-    <string name="nenhum">Nenhum</string>
-    <string name="editar">Editar</string>
-    <string name="excluir">Excluir</string>
-    <string name="qtdStickersInteiro">Quantidade de figurinhas deve ser número inteiro</string>
+    <string name="clear">Clear</string>
+    <string name="form_cleared_successfully">Form cleared successfully</string>
+
+    <string name="about">About</string>
+    <string name="utfpr_logo">UTFPR Logo</string>
+    <string name="description">Course: XXX Java Technology</string>
+    <string name="author">Author: Marlene Moraes</string>
+    <string name="email" translatable="false">E-mail: marlenevmoraes@outlook.com</string>
+    <string name="app_description">Description: My Stickers is an app developed to facilitate the management of your sticker album collections, by managing your stickers, keeping track of the stickers you are missing and the ones you have, and creating trade lists to share with friends and other collectors.</string>
+    <string name="author_site" translatable="false">http://lattes.cnpq.br/1660635383528761</string>
+    <string name="no_app_to_open">No app to open web pages</string>
+    <string name="contact_app">Contact via App</string>
+    <string name="no_app_to_send">No app to send the email</string>
+
+    <string name="album_list">Album List</string>
+    <string name="add_album">Add Album</string>
+    <string name="new_album">New Album</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="sports">Sports</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="celebrities">Celebrities</string>
+    <string name="cartoons">Cartoons</string>
+    <string name="anime_manga">Anime and Manga</string>
+    <string name="history_culture">History and Culture</string>
+    <string name="nature_science">Nature and Science</string>
+    <string name="space_astronomy">Space and Astronomy</string>
+    <string name="themed">Themed</string>
+    <string name="commemorative_editions">Commemorative Editions</string>
+    <string name="games">Games</string>
+    <string name="none">None</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="qtd_sticker_integer">The sticker quantity must be an integer</string>
+    <string name="suggest_category">Suggest Category</string>
+    <string name="spinner_no_values">The Category spinner has no values</string>
+    <string name="sorting">Sorting</string>
 </resources>

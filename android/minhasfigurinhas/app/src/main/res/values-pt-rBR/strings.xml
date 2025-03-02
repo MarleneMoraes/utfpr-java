@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minhas Figurinhas</string>
+
+    <string name="album_registration">Cadastro de Álbum</string>
+    <string name="sticker_quantity">Quantidade de Figurinhas</string>
+    <string name="shiny">Brilhantes?</string>
+    <string name="category">Categoria</string>
+    <string name="country">País</string>
+    <string name="brazil">Brasil</string>
+    <string name="others">Outros</string>
+    <string name="album_title">Título do Álbum</string>
+
+    <string name="save">Salvar</string>
+    <string name="title_required">O título do álbum é obrigatório.</string>
+    <string name="qtd_sticker_required">A quantidade de figurinhas é obrigatória.</string>
+    <string name="country_required">Selecione uma opção de país.</string>
+    <string name="category_required">Selecione uma categoria.</string>
+    <string name="qtd_sticker_limit">Quantidade de figurinhas deve ser entre 0 e 1000.</string>
+
+    <string name="data_saved_successfully">Dados salvos com sucesso!</string>
+
+    <string name="clear">Limpar</string>
+    <string name="form_cleared_successfully">Formulário limpo com sucesso.</string>
+
+    <string name="about">Sobre</string>
+    <string name="utfpr_logo">Logo da UTFPR</string>
+    <string name="description">Curso: XXX Tecnologia Java</string>
+    <string name="author">Autora: Marlene Moraes</string>
+    <string name="app_description">Descrição: Minhas Figurinhas é um aplicativo desenvolvido para facilitar o controle das suas coleções de álbuns de figurinhas, ao gerenciar suas figurinhas, manter o registro das figurinhas que faltam e das que possui, e criar listas de trocas para compartilhar com amigos e outros colecionadores.</string>
+    <string name="no_app_to_open">Nenhum aplicativo para abrir páginas web</string>
+    <string name="contact_app">Contato pelo App</string>
+    <string name="no_app_to_send">Nenhum aplicativo para enviar o e-mail</string>
+
+    <string name="album_list">Lista de Álbuns</string>
+    <string name="add_album">Adicionar Álbum</string>
+    <string name="new_album">Novo Álbum</string>
+
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="sports">Esportes</string>
+    <string name="movies">Filmes</string>
+    <string name="tv_shows">Séries de tv</string>
+    <string name="celebrities">Celebridades</string>
+    <string name="cartoons">Desenhos animados</string>
+    <string name="anime_manga">Animes e Mangás</string>
+    <string name="history_culture">História e Cultura</string>
+    <string name="nature_science">Natureza e Ciências</string>
+    <string name="space_astronomy">Espaço e Astronomia</string>
+    <string name="themed">Temáticos</string>
+    <string name="commemorative_editions">Edições Comemorativas</string>
+    <string name="games">Jogos</string>
+    <string name="none">Nenhum</string>
+
+    <string name="edit">Editar</string>
+    <string name="delete">Excluir</string>
+
+    <string name="qtd_sticker_integer">Quantidade de figurinhas deve ser número inteiro</string>
+    <string name="suggest_category">Sugerir Categoria</string>
+    <string name="spinner_no_values">O spinner Categoria não possui valores</string>
+    <string name="sorting">Ordenação</string>
+</resources>

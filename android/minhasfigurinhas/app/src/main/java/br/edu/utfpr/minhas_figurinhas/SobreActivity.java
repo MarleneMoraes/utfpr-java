@@ -15,11 +15,11 @@ public class SobreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sobre);
 
-        setTitle(getString(R.string.sobre));
+        setTitle(getString(R.string.about));
     }
 
     public void openSiteAuthor(View view){
-        openSite(String.valueOf(R.string.siteAuthor));
+        openSite(String.valueOf(R.string.author_site));
     }
 
     private void openSite(String url){
@@ -32,13 +32,13 @@ public class SobreActivity extends AppCompatActivity {
             startActivity(intentAbertura);
         } else {
             Toast.makeText(this,
-                    R.string.noAppToOpen,
+                    R.string.no_app_to_open,
                     Toast.LENGTH_LONG).show();
         }
     }
 
     public void sendAuthorEmail(View view){
-        sendEmail(new String[]{String.valueOf(R.string.email)}, String.valueOf(R.string.appContact));
+        sendEmail(new String[]{String.valueOf(R.string.email)}, String.valueOf(R.string.contact_app));
     }
 
     private void sendEmail (String[] extraEmails, String subject){
@@ -53,7 +53,7 @@ public class SobreActivity extends AppCompatActivity {
             startActivity(intentAbertura);
         } else {
             Toast.makeText(this,
-                    R.string.noAppToSend,
+                    R.string.no_app_to_send,
                     Toast.LENGTH_LONG).show();
         }
     }

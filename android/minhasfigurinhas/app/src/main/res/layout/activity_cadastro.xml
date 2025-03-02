@@ -37,13 +37,13 @@
                 android:id="@+id/radioButtonBR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/brasil" />
+                android:text="@string/brazil" />
 
             <RadioButton
                 android:id="@+id/radioButtonOT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/outros" />
+                android:text="@string/others" />
         </RadioGroup>
 
     </LinearLayout>
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="@string/quantidade_de_figurinhas" />
+            android:text="@string/sticker_quantity" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 android:id="@+id/checkboxShiny"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/brilhantes" />
+                android:text="@string/shiny" />
 
         </LinearLayout>
     </LinearLayout>
@@ -111,7 +111,7 @@
             android:id="@+id/labelCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/categoria"
+            android:text="@string/category"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.045"
@@ -123,7 +123,7 @@
             android:id="@+id/spinnerCategory"
             android:layout_width="340dp"
             android:layout_height="37dp"
-            android:entries="@array/categoria"
+            android:entries="@array/categories"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.225"
@@ -136,7 +136,7 @@
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/album_registry"
+        android:text="@string/album_registration"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -64,55 +64,55 @@ public class AlbumAdapter extends BaseAdapter {
 
         Album album = albuns.get(position);
 
-        holder.textViewTitleValue.setText(album.getTitulo());
-        holder.textViewCountryValue.setText(album.getPais().equals("Brasil") ?
-                                                                R.string.brasil : R.string.outros);
+        holder.textViewTitleValue.setText(album.getTitle());
+        holder.textViewCountryValue.setText(album.getCountry().equals(R.string.brazil) ?
+                                                                R.string.brazil : R.string.others);
 
-        switch (album.getCategoria()) {
-            case Esportes:
-                holder.textViewCategoryValue.setText(R.string.esportes);
+        switch (album.getCategory()) {
+            case Sports:
+                holder.textViewCategoryValue.setText(R.string.sports);
                 break;
-            case Filmes:
-                holder.textViewCategoryValue.setText(R.string.filmes);
+            case Movies:
+                holder.textViewCategoryValue.setText(R.string.movies);
                 break;
-            case Series_de_TV:
-                holder.textViewCategoryValue.setText(R.string.series_tv);
+            case TV_Shows:
+                holder.textViewCategoryValue.setText(R.string.tv_shows);
                 break;
-            case Celebridades:
-                holder.textViewCategoryValue.setText(R.string.celebridades);
+            case Celebrities:
+                holder.textViewCategoryValue.setText(R.string.celebrities);
                 break;
-            case Desenhos_Animados:
-                holder.textViewCategoryValue.setText(R.string.desenhos_animados);
+            case Cartoons:
+                holder.textViewCategoryValue.setText(R.string.cartoons);
                 break;
-            case Animes_Mangas:
-                holder.textViewCategoryValue.setText(R.string.animes_mangas);
+            case Anime_and_Manga:
+                holder.textViewCategoryValue.setText(R.string.anime_manga);
                 break;
-            case Historia_Cultura:
-                holder.textViewCategoryValue.setText(R.string.historia_cultura);
+            case History_and_Culture:
+                holder.textViewCategoryValue.setText(R.string.history_culture);
                 break;
-            case Natureza_Ciencias:
-                holder.textViewCategoryValue.setText(R.string.natureza_ciencias);
+            case Nature_and_Science:
+                holder.textViewCategoryValue.setText(R.string.nature_science);
                 break;
-            case Espaco_Astronomia:
-                holder.textViewCategoryValue.setText(R.string.espaco_astronomia);
+            case Space_and_Astronomy:
+                holder.textViewCategoryValue.setText(R.string.space_astronomy);
                 break;
-            case Tematicos:
-                holder.textViewCategoryValue.setText(R.string.tematicos);
+            case Themed:
+                holder.textViewCategoryValue.setText(R.string.themed);
                 break;
-            case Edicoes_Comemorativas:
-                holder.textViewCategoryValue.setText(R.string.edicoes_comemorativas);
+            case Commemorative_Editions:
+                holder.textViewCategoryValue.setText(R.string.commemorative_editions);
                 break;
-            case Jogos:
-                holder.textViewCategoryValue.setText(R.string.jogos);
+            case Games:
+                holder.textViewCategoryValue.setText(R.string.games);
                 break;
             default:
-                holder.textViewCategoryValue.setText(R.string.nenhum);
+                holder.textViewCategoryValue.setText(R.string.none);
                 break;
         }
 
-        holder.textViewQtdStickersValue.setText(String.valueOf(album.getQtdFigurinhas()));
+        holder.textViewQtdStickersValue.setText(String.valueOf(album.getQtdStickers()));
 
-        holder.textViewShinyValue.setText(album.isBrilhante() ? R.string.tem_brilhantes : R.string.nao_brilhantes);
+        holder.textViewShinyValue.setText(album.isShiny() ? R.string.yes : R.string.no);
 
         return convertView;
     }

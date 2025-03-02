@@ -6,9 +6,14 @@
         android:id="@+id/menuItemAdicionar"
         android:checked="false"
         android:icon="@android:drawable/ic_input_add"
-        android:title="@string/adicionar"
+        android:title="@string/add_album"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemOrdenacao"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="@string/sorting"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menuItemSobre"
-        android:title="@string/sobre" />
+        android:title="@string/about" />
 </menu>

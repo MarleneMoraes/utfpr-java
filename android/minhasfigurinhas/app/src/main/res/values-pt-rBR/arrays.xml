@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Esportes</item>
+        <item>Filmes</item>
+        <item>Séries de TV</item>
+        <item>Celebridades</item>
+        <item>Desenhos Animados</item>
+        <item>Animes e Mangás</item>
+        <item>História e Cultura</item>
+        <item>Natureza e Ciências</item>
+        <item>Espaço e Astronomia</item>
+        <item>Temáticos</item>
+        <item>Edições Comemorativas</item>
+        <item>Jogos</item>
+    </string-array>
+</resources>

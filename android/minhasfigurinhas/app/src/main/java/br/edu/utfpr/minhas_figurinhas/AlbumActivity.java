@@ -1,6 +1,8 @@
 package br.edu.utfpr.minhas_figurinhas;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -34,6 +36,12 @@ public class AlbumActivity extends AppCompatActivity {
     private View selectedView;
     private Drawable backgroundDrawable;
 
+    public static final String PREFERENCES = "br.edu.utfpr.minhas_figurinhas.PREFERENCES";
+
+    public static final String ASCENDING_SORT = "KEY_ASCENDING_SORT";
+
+    private boolean ascendingSort = true;
+
     private final ActionMode.Callback actionCallback = new ActionMode.Callback() {
 
         @Override
@@ -54,10 +62,10 @@ public class AlbumActivity extends AppCompatActivity {
             int idMenuItem = item.getItemId();
 
             if (idMenuItem == R.id.menuItemEditar) {
-                editarAlbum();
+                editAlbum();
                 return true;
             } else if (idMenuItem == R.id.menuItemExcluir) {
-                excluirAlbum();
+                deleteAlbum();
                 mode.finish();
                 return true;
             } else {
@@ -85,14 +93,16 @@ public class AlbumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_albuns);
 
-        setTitle(getString(R.string.lista_de_lbuns));
+        setTitle(getString(R.string.album_list));
 
         listViewAlbuns = findViewById(R.id.listViewAlbuns);
 
-        popularListaAlbuns();
+        readPreferences();
+
+        populateAlbumList();
     }
 
-    private void popularListaAlbuns() {
+    private void populateAlbumList() {
         albuns = new ArrayList<>();
 
         albumAdapter = new AlbumAdapter(this, albuns);
@@ -102,7 +112,7 @@ public class AlbumActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
                 position = index;
-                editarAlbum();
+                editAlbum();
             }
         });
 
@@ -133,12 +143,12 @@ public class AlbumActivity extends AppCompatActivity {
         listViewAlbuns.setAdapter(albumAdapter);
     }
 
-    public void abrirSobre() {
-        Intent intentAbertura = new Intent(this, SobreActivity.class);
-        startActivity(intentAbertura);
+    public void openAbout() {
+        Intent intent = new Intent(this, SobreActivity.class);
+        startActivity(intent);
     }
 
-    ActivityResultLauncher<Intent> launcherNovoAlbum = registerForActivityResult(
+    ActivityResultLauncher<Intent> launcherNewAlbum = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
 
@@ -151,29 +161,27 @@ public class AlbumActivity extends AppCompatActivity {
 
                         if (bundle != null) {
 
-                            String titulo = bundle.getString(CadastroActivity.TITULO);
-                            int qtdFigurinhas = Integer.parseInt(bundle.getString(CadastroActivity.QTDSTICKER));
-                            String categoria = bundle.getString(CadastroActivity.CATEGORIA);
-                            String pais = bundle.getString(CadastroActivity.NACIONALITY);
-                            boolean brilhante = bundle.getBoolean(CadastroActivity.SHINY);
+                            String title = bundle.getString(CadastroActivity.TITLE);
+                            int qtdSticker = Integer.parseInt(bundle.getString(CadastroActivity.QTDSTICKER));
+                            String category = bundle.getString(CadastroActivity.CATEGORY);
+                            String country = bundle.getString(CadastroActivity.COUNTRY);
+                            boolean shiny = bundle.getBoolean(CadastroActivity.SHINY);
 
-                            Album album = new Album(titulo, qtdFigurinhas, pais, brilhante,
-                                                                CategoriaAlbum.valueOf(categoria));
+                            Album album = new Album(title, qtdSticker, country, shiny,
+                                                                Category.valueOf(category));
 
                             albuns.add(album);
 
-                            Collections.sort(albuns, Album.sortAscending);
-
-                            albumAdapter.notifyDataSetChanged();
+                            sortList();
                         }
                     }
                 }
             });
-    public void abrirNovoAlbum() {
-        Intent intentAbertura = new Intent(this, CadastroActivity.class);
-        intentAbertura.putExtra(CadastroActivity.MODO, CadastroActivity.MODO_NOVO);
+    public void openNewAlbum() {
+        Intent intent = new Intent(this, CadastroActivity.class);
+        intent.putExtra(CadastroActivity.MODE, CadastroActivity.NEW_MODE);
 
-        launcherNovoAlbum.launch(intentAbertura);
+        launcherNewAlbum.launch(intent);
     }
 
     @Override
@@ -188,22 +196,26 @@ public class AlbumActivity extends AppCompatActivity {
         int idMenuItem = item.getItemId();
 
         if (idMenuItem == R.id.menuItemAdicionar) {
-            abrirNovoAlbum();
+            openNewAlbum();
             return true;
         } else if (idMenuItem == R.id.menuItemSobre) {
-            abrirSobre();
+            openAbout();
+            return true;
+        } else if (idMenuItem == R.id.menuItemOrdenacao) {
+            savePreferences(!ascendingSort);
+            sortList();
             return true;
         } else {
             return super.onOptionsItemSelected(item);
         }
     }
 
-    private void excluirAlbum() {
+    private void deleteAlbum() {
         albuns.remove(position);
         albumAdapter.notifyDataSetChanged();
     }
 
-    ActivityResultLauncher<Intent> launcherEditarAlbum = registerForActivityResult(
+    ActivityResultLauncher<Intent> launcherEditAlbum = registerForActivityResult(
                                                 new ActivityResultContracts.StartActivityForResult(),
                                                 new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -217,25 +229,23 @@ public class AlbumActivity extends AppCompatActivity {
 
                         if (bundle != null) {
 
-                            String titulo = bundle.getString(CadastroActivity.TITULO);
-                            int qtdFigurinhas = Integer.parseInt(bundle.getString(
+                            String title = bundle.getString(CadastroActivity.TITLE);
+                            int qtdStickers = Integer.parseInt(bundle.getString(
                                                                     CadastroActivity.QTDSTICKER));
-                            String pais = bundle.getString(CadastroActivity.NACIONALITY);
-                            boolean brilhante = bundle.getBoolean(CadastroActivity.SHINY);
-                            CategoriaAlbum categoria = CategoriaAlbum.valueOf(bundle.getString(
-                                                                        CadastroActivity.CATEGORIA));
+                            String country = bundle.getString(CadastroActivity.COUNTRY);
+                            boolean shiny = bundle.getBoolean(CadastroActivity.SHINY);
+                            Category category = Category.valueOf(bundle.getString(
+                                                                        CadastroActivity.CATEGORY));
 
                             Album album = albuns.get(position);
 
-                            album.setTitulo(titulo);
-                            album.setQtdFigurinhas(qtdFigurinhas);
-                            album.setPais(pais);
-                            album.setBrilhante(brilhante);
-                            album.setCategoria(categoria);
+                            album.setTitle(title);
+                            album.setQtdStickers(qtdStickers);
+                            album.setCountry(country);
+                            album.setShiny(shiny);
+                            album.setCategory(category);
 
-                            Collections.sort(albuns, Album.sortAscending);
-
-                            albumAdapter.notifyDataSetChanged();
+                            sortList();
                         }
                     }
                     position = -1;
@@ -246,19 +256,44 @@ public class AlbumActivity extends AppCompatActivity {
                 }
             });
 
-    private void editarAlbum(){
+    private void editAlbum(){
         Album album = albuns.get(position);
 
-        Intent intentAbertura = new Intent(this, CadastroActivity.class);
+        Intent intent = new Intent(this, CadastroActivity.class);
 
-        intentAbertura.putExtra(CadastroActivity.MODO, CadastroActivity.MODO_EDITAR);
+        intent.putExtra(CadastroActivity.MODE, CadastroActivity.EDIT_MODE);
 
-        intentAbertura.putExtra(CadastroActivity.TITULO, album.getTitulo());
-        intentAbertura.putExtra(CadastroActivity.QTDSTICKER, String.valueOf(album.getQtdFigurinhas()));
-        intentAbertura.putExtra(CadastroActivity.NACIONALITY, album.getPais());
-        intentAbertura.putExtra(CadastroActivity.SHINY, album.isBrilhante());
-        intentAbertura.putExtra(CadastroActivity.CATEGORIA, album.getCategoria().toString());
+        intent.putExtra(CadastroActivity.TITLE, album.getTitle());
+        intent.putExtra(CadastroActivity.QTDSTICKER, String.valueOf(album.getQtdStickers()));
+        intent.putExtra(CadastroActivity.COUNTRY, album.getCountry());
+        intent.putExtra(CadastroActivity.SHINY, album.isShiny());
+        intent.putExtra(CadastroActivity.CATEGORY, album.getCategory().toString());
 
-        launcherEditarAlbum.launch(intentAbertura);
+        launcherEditAlbum.launch(intent);
+    }
+
+    private void sortList() {
+        if(ascendingSort) {
+            Collections.sort(albuns, Album.sortAscending);
+        } else {
+            Collections.sort(albuns, Album.sortDescending);
+        }
+
+        albumAdapter.notifyDataSetChanged();
+    }
+    private void readPreferences() {
+        SharedPreferences shared = getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
+
+        ascendingSort = shared.getBoolean(ASCENDING_SORT, ascendingSort);
+    }
+
+    private void savePreferences(boolean newValue) {
+        SharedPreferences shared = getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = shared.edit();
+        editor.putBoolean(ASCENDING_SORT, newValue);
+        editor.commit();
+
+        ascendingSort = newValue;
     }
 }

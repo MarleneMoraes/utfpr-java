@@ -5,11 +5,15 @@
     <item
         android:id="@+id/menuItemSalvar"
         android:icon="@android:drawable/ic_menu_save"
-        android:title="@string/salvar"
+        android:title="@string/save"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menuItemLimpar"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
-        android:title="@string/limpar"
+        android:title="@string/clear"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemSugerirCategoria"
+        android:checkable="true"
+        android:title="@string/suggest_category" />
 </menu>
