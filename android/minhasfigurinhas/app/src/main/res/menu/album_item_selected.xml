@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuItemEditar"
+        android:id="@+id/menuItemEdit"
         android:title="@string/edit"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/menuItemExcluir"
+        android:id="@+id/menuItemDelete"
         android:title="@string/delete"
         app:showAsAction="ifRoom" />
 </menu>

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import br.edu.utfpr.minhas_figurinhas.model.Album;
+
 public class AlbumAdapter extends BaseAdapter {
 
     private Context context;

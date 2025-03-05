@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuItemSalvar"
+        android:id="@+id/menuItemSaveForm"
         android:icon="@android:drawable/ic_menu_save"
         android:title="@string/save"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/menuItemLimpar"
+        android:id="@+id/menuItemCleanForm"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@string/clear"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/menuItemSugerirCategoria"
+        android:id="@+id/menuItemSuggestCategory"
         android:checkable="true"
         android:title="@string/suggest_category" />
 </menu>

@@ -3,17 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuItemAdicionar"
+        android:id="@+id/menuItemAdd"
         android:checked="false"
         android:icon="@android:drawable/ic_input_add"
         android:title="@string/add_album"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/menuItemOrdenacao"
-        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:id="@+id/menuItemSorting"
+        android:icon="@drawable/ic_action_ascending_order"
         android:title="@string/sorting"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/menuItemSobre"
+        android:id="@+id/menuItemRestore"
+        android:title="@string/restore_defaults" />
+    <item
+        android:id="@+id/menuItemAbout"
         android:title="@string/about" />
 </menu>

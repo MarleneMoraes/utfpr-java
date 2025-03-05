@@ -39,6 +39,7 @@
 
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="ok" translatable="false">Ok</string>
 
     <string name="sports">Sports</string>
     <string name="movies">Movies</string>
@@ -61,4 +62,17 @@
     <string name="suggest_category">Suggest Category</string>
     <string name="spinner_no_values">The Category spinner has no values</string>
     <string name="sorting">Sorting</string>
+    <string name="restore_defaults">Restore Defaults</string>
+    <string name="restored_installation_default">The settings have restored to the installation default.</string>
+    <string name="warning">Warning</string>
+    <string name="want_to_delete">Do you want to delete \"%1$s\"?</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_restore_default">Do you want to restore factory settings?</string>
+
+    <string name="undo">Undo</string>
+    <string name="update_done">Data update done</string>
+    <string name="conversion_error">Type conversion error</string>
+    <string name="insert_error">Error to insert</string>
+    <string name="update_error">Error to update</string>
+    <string name="delete_error">Error to delete</string>
 </resources>

@@ -1,4 +1,6 @@
-package br.edu.utfpr.minhas_figurinhas;
+package br.edu.utfpr.minhas_figurinhas.model;
+
+import br.edu.utfpr.minhas_figurinhas.R;
 
 public enum Category {
     Sports(R.string.sports),
@@ -23,5 +25,12 @@ public enum Category {
 
     public int getResourceId() {
         return resourceId;
+    }
+
+    public static Category fromPosition(int position) {
+        if (position < 0 || position >= Category.values().length) {
+            return Category.None;
+        }
+        return Category.values()[position];
     }
 }

@@ -60,4 +60,17 @@
     <string name="suggest_category">Sugerir Categoria</string>
     <string name="spinner_no_values">O spinner Categoria não possui valores</string>
     <string name="sorting">Ordenação</string>
+
+    <string name="restore_defaults">Restaurar Padrões</string>
+    <string name="restored_installation_default">As configurações voltaram para o padrão de instalação.</string>
+    <string name="warning">Aviso</string>
+    <string name="want_to_delete">Deseja excluir \"%1$s\"?</string>
+    <string name="confirmation">Confirmação</string>
+    <string name="confirm_restore_default">Deseja restaurar para os padrões de fábrica?</string>
+    <string name="undo">Desfazer</string>
+    <string name="update_done">Dados atualizados</string>
+    <string name="conversion_error">Erro de tipo de conversão</string>
+    <string name="insert_error">Erro ao inserir</string>
+    <string name="update_error">Erro ao alterar</string>
+    <string name="delete_error">Erro ao excluir</string>
 </resources>

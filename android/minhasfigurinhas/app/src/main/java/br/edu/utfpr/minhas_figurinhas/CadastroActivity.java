@@ -6,28 +6,33 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
+import br.edu.utfpr.minhas_figurinhas.model.Album;
+import br.edu.utfpr.minhas_figurinhas.model.Category;
+import br.edu.utfpr.minhas_figurinhas.persistence.AlbumDatabase;
+import br.edu.utfpr.minhas_figurinhas.utils.UtilsAlert;
+
 public class CadastroActivity extends AppCompatActivity {
 
-    public static final String TITLE = "KEY_TITLE";
-    public static final String QTDSTICKER = "KEY_QTDSTICKER";
-    public static final String CATEGORY = "KEY_CATEGORY";
-    public static final String COUNTRY = "KEY_COUNTRY";
-    public static final String SHINY = "KEY_SHINY";
+    public static final String ID = "ID_KEY";
+
     public static final String SUGGEST_CATEGORY = "KEY_SUGGEST_CATEGORY";
     public static final String LAST_CATEGORY = "KEY_LAST_CATEGORY";
 
-    public static final String MODE = "MODE";
+    public static final String MODE = "MODE_KEY";
     public static final int NEW_MODE = 0;
     public static final int EDIT_MODE = 1;
 
@@ -77,33 +82,39 @@ public class CadastroActivity extends AppCompatActivity {
             } else {
                 setTitle(getString(R.string.edit));
 
-                String albumTitle = bundle.getString(CadastroActivity.TITLE);
-                String qtdSticker = bundle.getString(CadastroActivity.QTDSTICKER);
-                boolean country = bundle.getBoolean(CadastroActivity.COUNTRY);
-                boolean shiny = bundle.getBoolean(CadastroActivity.SHINY);
-                Category category = Category.valueOf(bundle.getString(
-                                                                        CadastroActivity.CATEGORY));
-                String countryText;
-                if (country) {
+                long id = bundle.getLong(ID);
+
+                AlbumDatabase database = AlbumDatabase.getInstance(this);
+                original = database.getAlbumDao().queryForId(id);
+
+                editAlbumTitle.setText(original.getTitle());
+                editQtdSticker.setText(original.getQtdStickers());
+
+                checkboxShiny.setChecked(original.isShiny());
+                spinnerCategory.setSelection(original.getCategory().getResourceId());
+
+                if (original.getCountry().equals(R.string.brazil)) {
                     radioButtonBR.setChecked(true);
-                    countryText = String.valueOf(R.string.brazil);
                 } else {
                     radioButtonOT.setChecked(true);
-                    countryText = String.valueOf(R.string.others);
                 }
 
-                original = new Album(albumTitle, Integer.parseInt(qtdSticker), countryText, shiny, category);
-
-                editAlbumTitle.setText(albumTitle);
-                editQtdSticker.setText(qtdSticker);
-
-                checkboxShiny.setChecked(shiny);
-                spinnerCategory.setSelection(category.ordinal());
+                editAlbumTitle.requestFocus();
+                editAlbumTitle.setSelection(editAlbumTitle.getText().length());
             }
         }
     }
 
     private void cleanForm() {
+        final String albumTitle = editAlbumTitle.getText().toString();
+        final String qtdSticker = editQtdSticker.getText().toString();
+        final int country = radioGroupCountry.getCheckedRadioButtonId();
+        final boolean shiny = checkboxShiny.isChecked();
+        final int category = spinnerCategory.getSelectedItemPosition();
+
+        final ScrollView scrollView = findViewById(R.id.main);
+        final View focusView = scrollView.findFocus();
+
         editAlbumTitle.setText(null);
         editQtdSticker.setText(null);
         radioGroupCountry.clearCheck();
@@ -112,84 +123,117 @@ public class CadastroActivity extends AppCompatActivity {
 
         editAlbumTitle.requestFocus();
 
-        Toast.makeText(this,
+        Snackbar snackbar = Snackbar.make(scrollView,
                 R.string.form_cleared_successfully,
-                Toast.LENGTH_LONG).show();
+                Snackbar.LENGTH_LONG);
+
+        snackbar.setAction(R.string.undo, new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                editAlbumTitle.setText(albumTitle);
+                editQtdSticker.setText(qtdSticker);
+                checkboxShiny.setChecked(shiny);
+
+                if (country == R.id.radioButtonBR){
+                    radioButtonBR.setChecked(true);
+                } else {
+                    radioButtonOT.setChecked(true);
+                }
+
+                spinnerCategory.setSelection(category);
+
+                if (focusView != null) {
+                    focusView.requestFocus();
+                }
+            }
+        });
+
+        snackbar.show();
     }
 
     private void saveForm() {
         String albumTitle = editAlbumTitle.getText().toString();
         String qtdStickerText = editQtdSticker.getText().toString();
-        int category = spinnerCategory.getSelectedItemPosition();
+        int categoryIndex = spinnerCategory.getSelectedItemPosition();
         boolean isRadioButtonSelected = radioButtonBR.isChecked() || radioButtonOT.isChecked();
 
         int qtdSticker = 0;
         try {
             qtdSticker = Integer.parseInt(qtdStickerText);
         } catch (NumberFormatException e) {
-            Toast.makeText(this,
-                    R.string.qtd_sticker_integer,
-                    Toast.LENGTH_LONG).show();
+            UtilsAlert.showAlert(this,  R.string.qtd_sticker_integer);
+            editQtdSticker.requestFocus();
             return;
         }
 
         if (qtdSticker < 0 || qtdSticker > 1000) {
-
-            Toast.makeText(this,
-                    R.string.qtd_sticker_limit,
-                    Toast.LENGTH_LONG).show();
-
+            UtilsAlert.showAlert(this,   R.string.qtd_sticker_limit);
             editQtdSticker.requestFocus();
             editQtdSticker.setSelection(0, editQtdSticker.getText().toString().length());
             return;
         }
 
-        Category categoriaAlbum = verifyCategory(category);
+        Category category = Category.fromPosition(categoryIndex);
 
         String country = radioButtonBR.isChecked() ? String.valueOf(R.string.brazil) :
                                                         String.valueOf(R.string.others);
         Boolean shiny = checkboxShiny.isChecked();
 
         if (albumTitle.isEmpty()) {
-            Toast.makeText(this, R.string.title_required, Toast.LENGTH_SHORT).show();
+            UtilsAlert.showAlert(this, R.string.title_required);
             editAlbumTitle.requestFocus();
             return;
         } else if (qtdStickerText.isEmpty()) {
-            Toast.makeText(this, R.string.qtd_sticker_required, Toast.LENGTH_SHORT).show();
+            UtilsAlert.showAlert(this, R.string.qtd_sticker_required);
             editQtdSticker.requestFocus();
             return;
         } else if (!isRadioButtonSelected) {
-            Toast.makeText(this, R.string.country_required, Toast.LENGTH_SHORT).show();
+            UtilsAlert.showAlert(this, R.string.country_required);
             radioButtonBR.requestFocus();
             return;
-        } else if (category == AdapterView.INVALID_POSITION) {
-            Toast.makeText(this, R.string.category_required, Toast.LENGTH_SHORT).show();
+        } else if (categoryIndex == AdapterView.INVALID_POSITION) {
+            UtilsAlert.showAlert(this, R.string.category_required);
             spinnerCategory.requestFocus();
             return;
         } else {
-            Toast.makeText(this, R.string.data_saved_successfully, Toast.LENGTH_SHORT).show();
+            UtilsAlert.showAlert(this, R.string.data_saved_successfully);
         }
 
-        if ((mode == EDIT_MODE &&
-                albumTitle.equalsIgnoreCase(original.getTitle()) &&
-                qtdSticker == original.getQtdStickers() &&
-                country.equalsIgnoreCase(original.getCountry()) &&
-                categoriaAlbum == original.getCategory())) {
+        Album album = new Album(albumTitle, qtdSticker, country, shiny, category);
 
+        if(album.equals(original)){
             setResult(AlbumActivity.RESULT_CANCELED);
             finish();
             return;
         }
 
-        saveLastCategory(category);
-
         Intent intentResponse = new Intent();
+        AlbumDatabase database = AlbumDatabase.getInstance(this);
 
-        intentResponse.putExtra(TITLE, albumTitle);
-        intentResponse.putExtra(QTDSTICKER, qtdStickerText);
-        intentResponse.putExtra(CATEGORY, categoriaAlbum.toString());
-        intentResponse.putExtra(COUNTRY, country);
-        intentResponse.putExtra(SHINY, shiny);
+        if(mode == NEW_MODE) {
+            long newId = database.getAlbumDao().insert(album);
+
+            if(newId <= 0) {
+                UtilsAlert.showAlert(this, R.string.insert_error);
+                return;
+            }
+
+            album.setId(newId);
+
+        } else {
+            album.setId(original.getId());
+            int updateline = database.getAlbumDao().update(album);
+
+            if(updateline != 1) {
+                UtilsAlert.showAlert(this, R.string.update_error);
+            }
+        }
+
+        saveLastCategory(categoryIndex);
+
+        intentResponse.putExtra(ID, album.getId());
 
         setResult(AlbumActivity.RESULT_OK, intentResponse);
 
@@ -198,13 +242,13 @@ public class CadastroActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.cadastro_opcoes, menu);
+        getMenuInflater().inflate(R.menu.options_registry, menu);
         return true;
     }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        MenuItem item = menu.findItem(R.id.menuItemSugerirCategoria);
+        MenuItem item = menu.findItem(R.id.menuItemSuggestCategory);
 
         if (item != null) {
             item.setChecked(suggestCategory);
@@ -217,13 +261,13 @@ public class CadastroActivity extends AppCompatActivity {
 
         int idMenuItem = item.getItemId();
 
-        if(idMenuItem == R.id.menuItemSalvar) {
+        if(idMenuItem == R.id.menuItemSaveForm) {
             saveForm();
             return true;
-        } else if (idMenuItem == R.id.menuItemLimpar) {
+        } else if (idMenuItem == R.id.menuItemCleanForm) {
             cleanForm();
             return true;
-        } else if (idMenuItem == R.id.menuItemSugerirCategoria) {
+        } else if (idMenuItem == R.id.menuItemSuggestCategory) {
             boolean value = !item.isChecked();
 
             saveSuggestCategory(value);
@@ -265,36 +309,4 @@ public class CadastroActivity extends AppCompatActivity {
 
         lastCategory = newValue;
     }
-
-    private Category verifyCategory(int position) {
-        switch (position) {
-            case 0:
-                return Category.Sports;
-            case 1:
-                return Category.Movies;
-            case 2:
-                return Category.TV_Shows;
-            case 3:
-                return Category.Celebrities;
-            case 4:
-                return Category.Cartoons;
-            case 5:
-                return Category.Anime_and_Manga;
-            case 6:
-                return Category.History_and_Culture;
-            case 7:
-                return Category.Nature_and_Science;
-            case 8:
-                return Category.Space_and_Astronomy;
-            case 9:
-                return Category.Themed;
-            case 10:
-                return Category.Commemorative_Editions;
-            case 11:
-                return Category.Games;
-            default:
-                return Category.None;
-        }
-    }
-
 }
